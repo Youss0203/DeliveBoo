@@ -93,6 +93,27 @@ class RestaurantSeeder extends Seeder
             'vat_no' =>84940834,
             'img_url'=>'https://media.istockphoto.com/id/1021577774/it/foto/mensa-del-mercato-del-pesce-di-jagalchi.jpg?s=612x612&w=0&k=20&c=6mcc_W6LJTibzkjhHbjpMFGAI1uRLV15aBbK2-7BVvA=',
         ],
+        [
+            'company_name' => 'Ristorante Nuovo Oriente',
+            'address' => 'Via Roma, 123 - Milano ',
+            'vat_no' => 87234651,
+            'img_url'=>'https://media.istockphoto.com/id/907599852/it/foto/ambiente-ristorante-tradizionale-cinese.jpg?s=612x612&w=0&k=20&c=Kh30Y8IWZMULCxtpIzJbz0cI9iVsHQRRKpCdSIn5EYQ=',
+        ],
+            
+        [
+            'company_name' => 'Lanterna Rossa',
+            'address' => 'Via Garibaldi, 45 - Milano',
+            'vat_no' => 17254256,
+            'img_url'=>'https://media.istockphoto.com/id/636542084/it/foto/ambiente-ristorante-tradizionale-in-alacarte-cinese.jpg?s=612x612&w=0&k=20&c=m1D7NsAp5CA5T6lf_BKvwqAjXP6s-Zg8B0gy33rP_OI=',
+        ],
+            
+        [
+            'company_name' => 'Giardino Di Giada',
+            'address' => 'Via Cavour, 78 - Milano',
+            'vat_no' => 003234252,
+            'img_url'=>'https://media.istockphoto.com/id/92222813/it/foto/ristorante.jpg?s=612x612&w=0&k=20&c=dcrz095P6bkmo-OWE_e34Rblzaih4_7swgjNpR2gItg=',
+        ],
+        
     ];
     foreach ($restaurants as $restaurant) {
         $newRestaurant = new Restaurant();
