@@ -15,9 +15,12 @@ return new class extends Migration
             $table->id();
             $table->string('name', 40);
             $table->text('ingredients');
-            $table->decimal('price');
+            $table->decimal('price', 10,2);
             $table->boolean('visibility');
+            $table->string('description');
             $table->string('img_url', 300,);
+            $table->unsignedBigInteger('id_restaurant');
+            $table->foreign('id_restaurant')->references('id')->on('restaurants');
             $table->timestamps();
 
         });
