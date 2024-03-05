@@ -19,8 +19,8 @@ return new class extends Migration
             $table->boolean('visibility');
             $table->string('description');
             $table->string('img_url', 300,);
-            $table->unsignedBigInteger('id_restaurant');
-            $table->foreign('id_restaurant')->references('id')->on('restaurants');
+            $table->unsignedBigInteger('restaurant_id');
+            $table->foreign('restaurant_id')->references('id')->on('restaurants');
             $table->timestamps();
 
         });
