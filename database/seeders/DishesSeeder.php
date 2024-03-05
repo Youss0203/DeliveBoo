@@ -19,6 +19,7 @@ class DishesSeeder extends Seeder
                 'price' => 35,
                 'ingredients' => 'Carne (di solito pollo, agnello o manzo), verdure (come carote, patate, zucchine), frutta secca (come prugne, albicocche), spezie (come cumino, zenzero, cannella)',
                 'visibility'=> true,
+                'description'=>'Il tajine è un piatto tradizionale della cucina del Nord Africa, particolarmente diffuso in Marocco'
                 ],
                 
                 [
@@ -27,6 +28,7 @@ class DishesSeeder extends Seeder
                 'price' => 70,
                 'ingredients' => 'Fogli di pasta fillo, pollo o pesce, mandorle, uova, cipolle, spezie (come cannella, zafferano), zucchero a velo',
                 'visibility'=> true,
+                'description'=>'La bastilla, conosciuta anche come pastilla o bastiya, è un piatto tradizionale della cucina marocchina, tipicamente servito come piatto principale o antipasto durante occasioni speciali e festività',
                 ],
                 
                 [
@@ -35,6 +37,8 @@ class DishesSeeder extends Seeder
                 'price' => 55,
                 'ingredients' => 'Semola di grano duro, verdure (come carote, zucchine, cipolle), carne (di solito agnello o pollo), spezie (come curcuma, cannella, zenzero)',
                 'visibility'=> true,
+                'description'=>'Il cous cous è un piatto tradizionale nordafricano composto principalmente da granelli di semola di grano duro, solitamente serviti come base per una varietà di salse, verdure e carne',
+                
                 ],
                 [
                 'name' =>"Sashimi",
@@ -42,19 +46,22 @@ class DishesSeeder extends Seeder
                 'price' => 3.50,
                 'ingredients' => "Pesce crudo",
                 'visibility'=> true,
+                'description'=>'Il sashimi è un piatto giapponese composto da fette di pesce crudo fresco, solitamente servite senza riso e condite con salsa di soia, wasabi e zenzero marinato.'
                 ],
                 [
                 'name' =>"Sushi",
                 'img_url' =>"https://media.istockphoto.com/id/1053855452/it/foto/sushi-impostato-su-piatto-di-bambù.jpg?s=1024x1024&w=is&k=20&c=-kByBkA1QVrSEl4_n2GYbF2IeWAJ2wdo8A0-Ob3hAqg=",
                 'price' => 4,
                 'ingredients' => "Pesce crudo, riso, alghe nori",
-                'visibility'=> true,    
+                'visibility'=> true,   
+                'description'=>'Il sushi è un piatto giapponese che consiste in riso condito con aceto di riso e accompagnato da una varietà di ingredienti, tra cui pesce crudo o cotto, frutti di mare, verdure e alghe' 
                 ],
                 [
                 'name' =>"Ramen",
                 'img_url' =>"https://media.istockphoto.com/id/1365977387/it/foto/ramen-con-sfrigolio-fumante.jpg?s=1024x1024&w=is&k=20&c=pHK6akYoYsAH9z_TGN3vTYqLYam8mqXlXuGh3z859zE=",
                 'price' => 6,
                 'ingredients' => "Noodle, brodo, carne (opzionale), uovo, cipollotti",
+                'description'=>'Il ramen è un piatto giapponese estremamente popolare e amato in tutto il mondo. È composto principalmente da una base di brodo, noodles, e una varietà di ingredienti che possono includere carne, verdure, uova e condimenti.',
                 'visibility'=> true,
                 ],
                 [
@@ -63,16 +70,23 @@ class DishesSeeder extends Seeder
                 'price' => 2,
                 'ingredients' => "Verdure (come zucchine, carote), gamberi, pesce, pastella",
                 'visibility'=> true,
+                'description'=>'La tempura è un piatto giapponese costituito da cibo fritto immerso in una pastella leggera e croccante'
                 ],
         ];
+
+
+        //$restaurantIds = Restaurant::all()->pluck('id');
         foreach ($dishes as $dish) {
             $newDish = new Dish();
 
             $newDish->name = $dish['name'];
+           //$newDish->restaurant_id = $restaurantIds[rand(0, count($restaurantIds) - 1)];
             $newDish->img_url = $dish['img_url'];
             $newDish->price = $dish['price'];
             $newDish->ingredients = $dish['ingredients'];
             $newDish->visibility = $dish['visibility'];
+            $newDish->description = $dish['description'];
+            $newDish->id_restaurant = $dish['description'];
             $newDish->save();
     }
 }
