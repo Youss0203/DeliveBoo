@@ -3,7 +3,11 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+ branch_berna
+// use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
+
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
+ main
 use App\Http\Controllers\Admin\RestaurantController as AdminRestaurantController;
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +32,19 @@ Route::middleware('auth')
     ->name('admin.')
     ->prefix('admin')
     ->group(function () {
+
+
+        // Route::get('/restaurant', [AdminRestaurantController::class, 'index'])->name('restaurant');
+        // Route::get('/restaurants/create', [AdminRestaurantController::class, 'create'])->name('restaurants.create');
+
+        Route::resource('/restaurants', AdminRestaurantController::class);
+        // Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('dashboard');
+        // Route::get('/projects/deleted', [AdminProjectController::class, 'deletedIndex'])->name('projects.deleted.index');
+        // Route::get('/projects/deleted/{project}', [AdminProjectController::class, 'deletedShow'])->name('projects.deleted.show');
+        // Route::patch('/projects/deleted/{project}', [AdminProjectController::class, 'deletedRestore'])->name('projects.deleted.restore');
+        // Route::delete('/projects/deleted/{project}', [AdminProjectController::class, 'deletedDestroy'])->name('projects.deleted.destroy');
+        // Route::resource('/projects', AdminProjectController::class);
+
         Route::resource('/restaurants', AdminRestaurantController::class);
         
         // Route::get('/restaurant', [AdminRestaurantController::class, 'index'])->name('restaurant');
@@ -39,4 +56,5 @@ Route::middleware('auth')
     //     Route::patch('/projects/deleted/{project}', [AdminProjectController::class, 'deletedRestore'])->name('projects.deleted.restore');
     //     Route::delete('/projects/deleted/{project}', [AdminProjectController::class, 'deletedDestroy'])->name('projects.deleted.destroy');
     //     Route::resource('/projects', AdminProjectController::class);
+
     });

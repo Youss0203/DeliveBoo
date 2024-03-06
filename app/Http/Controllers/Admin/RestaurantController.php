@@ -14,14 +14,14 @@ class RestaurantController extends Controller
     public function index()
     {
         $restaurants = Restaurant::all();
-       return view('admin.restaurants.index', compact('restaurants'));
+        return view('admin.restaurants.index', compact('restaurants'));
     }
 
     /**
      * Show the form for creating a new resource.
      */
     public function create()
-    {     
+    {
         $restaurants = new Restaurant();
         return view('admin.restaurants.create', compact('restaurants'));
     }
