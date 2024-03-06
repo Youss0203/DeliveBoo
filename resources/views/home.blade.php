@@ -18,6 +18,9 @@
 
                         <div class="my-5">
 
+                    <div>
+
+
 
 
 
@@ -28,6 +31,14 @@
                             </a>
 
                         </div>
+
+                        <a href="{{ route('admin.restaurants.create') }}">
+                            <button class="p-3 my-4">
+                                Aggiungi ristorante
+                            </button>
+                        </a>
+                        
+
                     </div>
                 </div>
             </div>

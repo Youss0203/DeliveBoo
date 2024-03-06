@@ -53,6 +53,7 @@
                                 </li>
                             @endif
                         @else
+
                             <li class="nav-item dropdown">
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('admin.projects.index') }}">Progetti</a>
@@ -82,6 +83,11 @@
                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
+
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+
                                                      document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}
                                 </a>
