@@ -36,6 +36,7 @@ class RestaurantSeeder extends Seeder
                 'img_url' => 'https://media.istockphoto.com/id/1125855196/it/foto/una-donna-che-mangia-cibo-fusion-asiatico-in-un-ristorante.jpg?s=612x612&w=0&k=20&c=agIhHKxFbeGSXlZOt02GOBtztzd0PDDSTYp2fIyMobg=',
                 'user_id' => 3,
             ],
+            // ristoranti africani
             [
                 'company_name' => 'Afro Delight',
                 'address' => 'Via Torino, 3 - Milano',
@@ -58,6 +59,7 @@ class RestaurantSeeder extends Seeder
                 'img_url' => 'https://media.istockphoto.com/id/1130751052/it/foto/un-allestimento-interno-ristorante-italiano.jpg?s=612x612&w=0&k=20&c=pi5kjVSAnBMC3kHRWe2AoxjMZ8zPhvUK75uATBULUhM=',
                 'user_id' => 6,
             ],
+            // ristoranti spagnolo
             [
                 'company_name' => 'El Gato',
                 'address' => 'Via Alessandro Volta, 18- Milano',
@@ -65,7 +67,6 @@ class RestaurantSeeder extends Seeder
                 'img_url' => 'https://media.istockphoto.com/id/628096410/it/foto/scorcio-dellandalusia.jpg?s=612x612&w=0&k=20&c=kvNgAfYecSi8PJo0SndgDAQvZNJaDKMDvMLFn38L_Mk=',
                 'user_id' => 7,
             ],
-
             [
                 'company_name' => 'La Piemontesa',
                 'address' => ' Via Ruggero Boscovich, 57, - Milano',
@@ -73,7 +74,6 @@ class RestaurantSeeder extends Seeder
                 'img_url' => 'https://media.istockphoto.com/id/1286692956/it/foto/interno-del-caffè-vuoto-con-sedie-e-tavoli.jpg?s=612x612&w=0&k=20&c=hXWUhmIf2WKIL8vJ-34cuilTT4tjinfktRXenPFHORM=',
                 'user_id' => 8,
             ],
-
             [
                 'company_name' => 'Lateral',
                 'address' => 'Via Palestro, 16 - Milano',
@@ -81,13 +81,15 @@ class RestaurantSeeder extends Seeder
                 'img_url' => 'https://media.istockphoto.com/id/458602929/it/foto/spagnoli-tradizionali-bar-di-siviglia.jpg?s=612x612&w=0&k=20&c=NU3taJONXa27aGvk9FxwrEvqkb6Ltv-pBF6M9vejMRM=',
                 'user_id' => 9,
             ],
+            // ristoranti coreani
             [
                 'company_name' => 'Arirang',
                 'address' => 'Via Sardegna, 29 - Milano',
                 'vat_no' => 34568748,
-                'img_url' => 'hhttps://media.istockphoto.com/id/1344930008/it/foto/ristorante-a-pyongyang-corea-del-nord.jpg?s=612x612&w=0&k=20&c=IGQNuu5f1ySVF8hko-RVyDDijusaGo1H8cPq7yP1DqI=',
+                'img_url' => 'https://media.istockphoto.com/id/1344930008/it/foto/ristorante-a-pyongyang-corea-del-nord.jpg?s=612x612&w=0&k=20&c=IGQNuu5f1ySVF8hko-RVyDDijusaGo1H8cPq7yP1DqI=',
                 'user_id' => 10,
             ],
+
             [
                 'company_name' => 'Buk Chang Dong',
                 'address' => 'Via Paolo Sarpi, 15 - Milano',
@@ -102,6 +104,7 @@ class RestaurantSeeder extends Seeder
                 'img_url' => 'https://media.istockphoto.com/id/1021577774/it/foto/mensa-del-mercato-del-pesce-di-jagalchi.jpg?s=612x612&w=0&k=20&c=6mcc_W6LJTibzkjhHbjpMFGAI1uRLV15aBbK2-7BVvA=',
                 'user_id' => 12,
             ],
+            // ristoranti cinesi
             [
                 'company_name' => 'Ristorante Nuovo Oriente',
                 'address' => 'Via Roma, 123 - Milano ',
@@ -109,7 +112,6 @@ class RestaurantSeeder extends Seeder
                 'img_url' => 'https://media.istockphoto.com/id/907599852/it/foto/ambiente-ristorante-tradizionale-cinese.jpg?s=612x612&w=0&k=20&c=Kh30Y8IWZMULCxtpIzJbz0cI9iVsHQRRKpCdSIn5EYQ=',
                 'user_id' => 13,
             ],
-
             [
                 'company_name' => 'Lanterna Rossa',
                 'address' => 'Via Garibaldi, 45 - Milano',
@@ -117,7 +119,6 @@ class RestaurantSeeder extends Seeder
                 'img_url' => 'https://media.istockphoto.com/id/636542084/it/foto/ambiente-ristorante-tradizionale-in-alacarte-cinese.jpg?s=612x612&w=0&k=20&c=m1D7NsAp5CA5T6lf_BKvwqAjXP6s-Zg8B0gy33rP_OI=',
                 'user_id' => 14,
             ],
-
             [
                 'company_name' => 'Giardino Di Giada',
                 'address' => 'Via Cavour, 78 - Milano',
@@ -125,6 +126,7 @@ class RestaurantSeeder extends Seeder
                 'img_url' => 'https://media.istockphoto.com/id/92222813/it/foto/ristorante.jpg?s=612x612&w=0&k=20&c=dcrz095P6bkmo-OWE_e34Rblzaih4_7swgjNpR2gItg=',
                 'user_id' => 15,
             ],
+            // ristoranti americani
             [
                 'company_name' => 'Big Al\'s BBQ',
                 'address' => 'Via Larga, 45 - Milano',
@@ -132,7 +134,6 @@ class RestaurantSeeder extends Seeder
                 'img_url' => 'https://media.istockphoto.com/id/1056361994/it/foto/spiaggia-di-kamari-sullisola-di-santorini-grecia.jpg?s=1024x1024&w=is&k=20&c=PQuoD-0qkSylm1rUXrBhWvU8pkavECo2kudHguNtgG4=',
                 'user_id' => 16,
             ],
-
             [
                 'company_name' => 'Sally \'s Southern Kitchen',
                 'address' => 'Via Alberico Albricci, 67 - Milano',
@@ -149,7 +150,7 @@ class RestaurantSeeder extends Seeder
                 'user_id' => 18,
 
             ],
-
+            // ristoranti messicani
             [
                 'company_name' => 'Mexi-Caliente',
                 'address' => 'Via del Sol, 12 - Milano',
@@ -158,7 +159,6 @@ class RestaurantSeeder extends Seeder
                 'user_id' => 19,
 
             ],
-
             [
                 'company_name' =>  'El Sombrero',
                 'address' =>  'Via del Pueblo, 3 - Milano',
@@ -167,7 +167,6 @@ class RestaurantSeeder extends Seeder
                 'user_id' => 20,
 
             ],
-
             [
                 'company_name' => 'Fiesta Mexicana',
                 'address' => 'Via del Sol, 10 - Milano',
@@ -218,8 +217,7 @@ class RestaurantSeeder extends Seeder
                 'img_url' => 'url_immagine6.jpg',
                 'user_id' => 27,
             ],
-            // risto. italiani
-
+            // ristoranti italiani
             [
                 'company_name' => 'La Dolce Vita Ristorante',
                 'address' => 'Via Luce, 45, 20100 Milano',
