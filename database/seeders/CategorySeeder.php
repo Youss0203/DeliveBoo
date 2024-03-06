@@ -14,16 +14,16 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         $categories = [
-            'Italiano',
-            'Spagnolo',
-            'Thailandese',
-            'Messicano',
-            'Africano',
-            'Indiano',
-            'Americano',
             'Giapponese',
+            'Africano',
+            'Spagnolo',
+            'Koreano',
             'Cinese',
-            'Koreano'
+            'Americano',
+            'Messicano',
+            'Indiano',
+            'Italiano',
+            'Thailandese',
         ];
         foreach ($categories as $singleCategory) {
             $newCategory = new Category();
