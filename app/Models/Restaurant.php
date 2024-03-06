@@ -12,4 +12,8 @@ class Restaurant extends Model
     public function dishes() {
         return $this->hasMany(Dish::class);
     }
+
+    public function users() {
+        return $this->belongsTo(User::class);
+    }
 }

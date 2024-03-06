@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('address', 60);
             $table->integer('vat_no')->lenght(10);
             $table->string('img_url', 300);
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }
