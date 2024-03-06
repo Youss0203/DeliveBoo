@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 namespace App\Models;
 
@@ -17,4 +17,4 @@ class Project extends Model
         'linguaggi_usati',
         'repo_url',
     ];
-}
+} -->
