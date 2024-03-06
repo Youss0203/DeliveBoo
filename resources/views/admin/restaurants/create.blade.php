@@ -32,11 +32,6 @@
             </div>
 
             <div class="mb-3">
-                <label for="vat_no"class="form-label">Partita Iva</label>
-                <input type="integer" name="vat_no" id="vat_no" class="form-control">
-            </div>
-
-            <div class="mb-3">
                 <label for="img_url"class="form-label">Foto ristorante</label>
                 <input type="file" name="img_url" id="img_url" class="form-control">
             </div>
@@ -46,19 +41,22 @@
                 <div class="mb-3 input-group">
                     <div>
                         @foreach ($categories as $category )
-
-                            <input class="form-check-input" type="checkbox" name="categories[]" id="categories-{{ $category->id }}" value="{{ $categories->id }}"
-                            {{ in_array( $categories->id, old('categories', $category->categories->pluck('id')->toArray())) ? 'checked' : '' }}>
+                        
+                            <input class="form-check-input" type="checkbox" name="categories[]" id="categories-{{ $category->id }}" value="{{ $category->id }}"
+                            {{ in_array( $category->id, old('categories', $restaurants->categories->pluck('id')->toArray())) ? 'checked' : '' }}>
                             <label for="categories-{{ $category->id }}">
-                                {{ $categories->category }}
+                                {{ $category->category }}
                             </label>
                             
                         @endforeach
+
+
+                       
                     </div>
                 </div>
             </div>
 
-            
+            <button type="submit" class="btn btn-primary">Crea ristorante</button>
 
         
         </form>

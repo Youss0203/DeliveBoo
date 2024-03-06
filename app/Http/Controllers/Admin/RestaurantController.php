@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Models\Restaurant;
+use Illuminate\Support\Facades\Auth;
 
 class RestaurantController extends Controller
 {
@@ -23,8 +25,9 @@ class RestaurantController extends Controller
     public function create()
     {
         $restaurants = new Restaurant();
-        // $categories = Catego
-        return view('admin.restaurants.create', compact('restaurants'));
+        $categories = Category::all();
+
+        return view('admin.restaurants.create', compact('restaurants', 'categories'));
     }
 
     /**
@@ -32,6 +35,15 @@ class RestaurantController extends Controller
      */
     public function store(Request $request)
     {
+       
+        $data = $request->all();
+        $data['user_id'] = Auth::id();
+        $newRestaurant = Restaurant::create($data);
+
+        $newRestaurant->categories()->sync($data['categories']);
+
+        
+
         // store -> 
         // $imageSrc = Storage::put('uploads/posts', $data['post_image']);
         // $data['post_image'] = $imageSrc;
