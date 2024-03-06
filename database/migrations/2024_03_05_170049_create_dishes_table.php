@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('ingredients');
             $table->decimal('price', 10,2);
             $table->boolean('visibility');
-            $table->string('description');
+            $table->string('description', 500);
             $table->string('img_url', 300,);
             $table->unsignedBigInteger('restaurant_id');
             $table->foreign('restaurant_id')->references('id')->on('restaurants');
