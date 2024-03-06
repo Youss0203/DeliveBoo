@@ -16,13 +16,13 @@
 
                     {{ __('Benvenuto!') }}
 
-                    <div class="my-5">
+                    <div>
 
                         
                         
 
-                        {{-- <a href="{{ route('admin.restaurants.create') }}"> --}}
-                            <button class="p-3">
+                        <a href="{{ route('admin.restaurants.create') }}">
+                            <button class="p-3 my-4">
                                 Aggiungi ristorante
                             </button>
                         </a>

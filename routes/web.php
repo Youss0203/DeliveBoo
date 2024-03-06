@@ -28,9 +28,10 @@ Route::middleware('auth')
     ->name('admin.')
     ->prefix('admin')
     ->group(function () {
-
-        Route::get('/restaurant', [AdminRestaurantController::class, 'index'])->name('restaurant');
-        Route::get('/restaurants/create',[AdminRestaurantController::class, 'create']) ->name('admin.restaurant.create');
+        Route::resource('/restaurants', AdminRestaurantController::class);
+        
+        // Route::get('/restaurant', [AdminRestaurantController::class, 'index'])->name('restaurant');
+        // Route::get('/restaurants/create',[AdminRestaurantController::class, 'create']) ->name('admin.restaurant.create');
 
     //     Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('dashboard');
     //     Route::get('/projects/deleted', [AdminProjectController::class, 'deletedIndex'])->name('projects.deleted.index');
