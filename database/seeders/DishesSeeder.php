@@ -219,24 +219,24 @@ class DishesSeeder extends Seeder
                 'restaurant_id' =>12,
                 ],
                 [
-                    'name' => 'Costine St. Louis Fumanti',
-                    'img_url' => 'https://media.istockphoto.com/id/1221822964/it/foto/lento-arrostito-st-louis-stile-bambino-indietro-costole-di-maiale.jpg?s=1024x1024&w=is&k=20&c=r9q3j4rOk6oxTLmYTLwFxvSv7Egb3ivESr16ynwhADA=',
-                    'price'=> 18.99,
-                    'ingredients'=> 'frizione a secco, salsa barbecue segreta di Big Al',
-                    'description' => 'Costine di maiale in stile St. Louis',
-                    'visibility' => true,
-                    'restaurant_id' =>13 ,
+                'name' => 'Costine St. Louis Fumanti',
+                'img_url' => 'https://media.istockphoto.com/id/1221822964/it/foto/lento-arrostito-st-louis-stile-bambino-indietro-costole-di-maiale.jpg?s=1024x1024&w=is&k=20&c=r9q3j4rOk6oxTLmYTLwFxvSv7Egb3ivESr16ynwhADA=',
+                'price'=> 18.99,
+                'ingredients'=> 'frizione a secco, salsa barbecue segreta di Big Al',
+                'description' => 'Costine di maiale in stile St. Louis',
+                'visibility' => true,
+                'restaurant_id' =>13 ,
                 ],
                 
                 
                 [
-                    'name' => 'Pollo Fritto alla Southern con Waffle',
-                    'img_url' => 'https://media.istockphoto.com/id/1325150602/it/foto/cialde-con-pollo-fritto.jpg?s=1024x1024&w=is&k=20&c=ujZ_y2YbnHcXZ7cENgRuhPsPoJOyh_H6rkYPdotxaSM=',
-                    'price' => 15.99,
-                    'ingredients'=> 'Pollo fritto al latticello, waffle belga, sciroppo d\'acero',
-                    'visibility' => true,
-                    'description' => 'Il Pollo Fritto alla Southern con Waffle è un\'abbinata iconica della cucina americana meridionale. Il pollo viene marinato in una miscela di spezie ed erbe aromatiche.',
-                    'restaurant_id' =>14 ,
+                'name' => 'Pollo Fritto alla Southern con Waffle',
+                'img_url' => 'https://media.istockphoto.com/id/1325150602/it/foto/cialde-con-pollo-fritto.jpg?s=1024x1024&w=is&k=20&c=ujZ_y2YbnHcXZ7cENgRuhPsPoJOyh_H6rkYPdotxaSM=',
+                'price' => 15.99,
+                'ingredients'=> 'Pollo fritto al latticello, waffle belga, sciroppo d\'acero',
+                'visibility' => true,
+                'description' => 'Il Pollo Fritto alla Southern con Waffle è un\'abbinata iconica della cucina americana meridionale. Il pollo viene marinato in una miscela di spezie ed erbe aromatiche.',
+                'restaurant_id' =>14 ,
                 ],
                 
                 [
@@ -244,7 +244,7 @@ class DishesSeeder extends Seeder
                 'img_url' =>'https://media.istockphoto.com/id/855118160/it/foto/torta-di-bacche-di-natale.jpg?s=1024x1024&w=is&k=20&c=aKs6awqCFv5-QmPuaUnqUo86rNLX3Scf8bJnIyfTc4U=',
                 'price' => 8.99,
                 'ingredients' => 'Pan di Spagna al cacao,Mousse al cioccolato fondente,Ganache al caramello salato,Noci pecan pralinate',
-                'visibility' => false,
+                'visibility' => true,
                 'description' => 'La torta del peccatore è un dolce paradisiaco che fa sognare al solo guardarlo.',
                 'restaurant_id' => 15,
                 
