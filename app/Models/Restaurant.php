@@ -23,4 +23,13 @@ class Restaurant extends Model
     {
         return $this->belongsToMany(Category::class);
     }
+
+    protected $fillable = [
+
+        'company_name',
+        'address',
+        'vat_no',
+        'img_url',
+        'user_id',
+    ];
 }

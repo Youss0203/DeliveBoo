@@ -72,7 +72,7 @@ class RestaurantCategorySeeder extends Seeder
         foreach ($restaurantCategories as $rc) {
             // Verifica se entrambi i ristoranti e le categorie esistono prima di aggiungere il record
             if (Restaurant::find($rc['restaurant_id']) && Category::find($rc['category_id'])) {
-                \DB::table('restaurant_category')->insert($rc);
+                DB::table('category_restaurant')->insert($rc);
             }
         }
     }
