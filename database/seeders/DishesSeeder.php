@@ -218,6 +218,66 @@ class DishesSeeder extends Seeder
                 'description' => 'Tofu Saltato con Verdure: un piatto vegano ricco di proteine e vitamine, dove il tofu morbido si sposa con il gusto croccante delle verdure saltate in padella, per un\'esperienza culinaria sana e saporita.',
                 'restaurant_id' =>12,
                 ],
+                [
+                    'name' => 'Costine St. Louis Fumanti',
+                    'img_url' => 'https://media.istockphoto.com/id/1221822964/it/foto/lento-arrostito-st-louis-stile-bambino-indietro-costole-di-maiale.jpg?s=1024x1024&w=is&k=20&c=r9q3j4rOk6oxTLmYTLwFxvSv7Egb3ivESr16ynwhADA=',
+                    'price'=> 18.99,
+                    'ingredients'=> 'frizione a secco, salsa barbecue segreta di Big Al',
+                    'description' => 'Costine di maiale in stile St. Louis',
+                    'visibility' => true,
+                    'restaurant_id' =>13 ,
+                ],
+                
+                
+                [
+                    'name' => 'Pollo Fritto alla Southern con Waffle',
+                    'img_url' => 'https://media.istockphoto.com/id/1325150602/it/foto/cialde-con-pollo-fritto.jpg?s=1024x1024&w=is&k=20&c=ujZ_y2YbnHcXZ7cENgRuhPsPoJOyh_H6rkYPdotxaSM=',
+                    'price' => 15.99,
+                    'ingredients'=> 'Pollo fritto al latticello, waffle belga, sciroppo d\'acero',
+                    'visibility' => true,
+                    'description' => 'Il Pollo Fritto alla Southern con Waffle è un\'abbinata iconica della cucina americana meridionale. Il pollo viene marinato in una miscela di spezie ed erbe aromatiche.',
+                    'restaurant_id' =>14 ,
+                ],
+                
+                [
+                'name' => 'La Torta del Peccatore',
+                'img_url' =>'https://media.istockphoto.com/id/855118160/it/foto/torta-di-bacche-di-natale.jpg?s=1024x1024&w=is&k=20&c=aKs6awqCFv5-QmPuaUnqUo86rNLX3Scf8bJnIyfTc4U=',
+                'price' => 8.99,
+                'ingredients' => 'Pan di Spagna al cacao,Mousse al cioccolato fondente,Ganache al caramello salato,Noci pecan pralinate',
+                'visibility' => false,
+                'description' => 'La torta del peccatore è un dolce paradisiaco che fa sognare al solo guardarlo.',
+                'restaurant_id' => 15,
+                
+                ],
+                [
+                'name' => 'Burrito con Pollo e Riso',
+                'img_url' =>'https://media.istockphoto.com/id/912134046/it/foto/ciotola-di-burrito-di-pollo-messicano-fatta-in-casa-con-riso-fagioli-mais-pomodoro-avocado.jpg?s=1024x1024&w=is&k=20&c=6bK-ZqsrkBMMFMFfjovYeCXm8vqQVRN-cBh_WDzXofo=',
+                'price' => 10.00,
+                'ingredients' => 'Tortilla di farina, pollo, riso bianco, fagioli neri, pomodori, lattuga, formaggio cheddar, panna acida, salsa guacamole, salsa pico de gallo',
+                'visibility' => true,
+                'description' => 'Il Burrito con Pollo e Riso è un\'esplosione di sapori e consistenze che ti catapulterà direttamente in Messico.',
+                'restaurant_id' =>17 ,
+                ],
+                
+                [
+                'name' => 'Fajitas di Manzo con Verdure',
+                'img_url' => 'https://media.istockphoto.com/id/1175732553/it/foto/manzo-piccante-verdure-avocado-tortillas-di-mais-fajitas-su-una-padella-su-un-foglio-su-sfondo.jpg?s=1024x1024&w=is&k=20&c=im67woDNNArw7KO3JoqMf1M6l1eyAhrorU0xh6FI60c=',
+                'price' => 12.00,
+                'ingredients' => 'Manzo, peperoni, cipolle, peperoncino jalapeno, tortillas di mais, spezie per fajitas, olio d\'oliva, sale e pepe',
+                'visibility' => true,
+                'description' => 'Le Fajitas di Manzo con Verdure sono un tripudio di colori e sapori che ti trasportano in un viaggio culinario nel cuore del Texas.',
+                'restaurant_id' =>18 ,
+                ],    
+                    
+                [    
+                'name' => 'Guacamole con Nachos',
+                'img_url' => 'https://media.istockphoto.com/id/1147614546/it/foto/ciotola-di-guacamole-con-patatine-tortilla.jpg?s=1024x1024&w=is&k=20&c=iHKvR9h3S7Q1C78P5yTp66tdFWpkF0Oh7U1U8aMPthA=',
+                'price' => 7.00,
+                'ingredients' => 'Avocado, pomodori, cipolla, peperoncino jalapeno, coriandolo, lime, olio d\'oliva, sale e pepe, tortilla chips',
+                'visibility' => true,
+                'description' => 'Il Guacamole con Nachos è un connubio perfetto tra sapori e consistenze che conquista al primo morso.',
+                'restaurant_id' =>16 ,
+                ],
 
      
         ];

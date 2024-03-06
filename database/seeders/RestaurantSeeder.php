@@ -113,6 +113,56 @@ class RestaurantSeeder extends Seeder
             'vat_no' => 003234252,
             'img_url'=>'https://media.istockphoto.com/id/92222813/it/foto/ristorante.jpg?s=612x612&w=0&k=20&c=dcrz095P6bkmo-OWE_e34Rblzaih4_7swgjNpR2gItg=',
         ],
+        [
+            'company_name' => 'Big Al\'s BBQ',
+            'address' => 'Via Larga, 45 - Milano',
+            'vat_no' => 43268901,
+            'img_url'=> 'https://media.istockphoto.com/id/1056361994/it/foto/spiaggia-di-kamari-sullisola-di-santorini-grecia.jpg?s=1024x1024&w=is&k=20&c=PQuoD-0qkSylm1rUXrBhWvU8pkavECo2kudHguNtgG4=',
+        ],
+            
+        [
+            
+            'company_name' => 'Sally \'s Southern Kitchen',
+            'address' => 'Via Alberico Albricci, 67 - Milano',
+            'vat_no' => 12345558,
+            'img_url' => 'https://media.istockphoto.com/id/1312094858/it/foto/barbecue-nel-ristorante-di-mercado-del-puerto-a-montevideo-uruguay.jpg?s=1024x1024&w=is&k=20&c=ENibQuhFWiazxjT5v3qiLlZV0msKqHY8eZ1YzRsya5E=',
+        ],
+            
+        [
+            
+            'company_name' => 'The Rusty Fork',
+            'address' => 'Via Chiaravalle, 35 - Milano',
+            'vat_no' => '47658901',
+            'img_url' => 'https://media.istockphoto.com/id/1095019510/it/foto/bistecche-di-maiale-alla-griglia-su-pietra-con-bottiglia-di-vino-bicchiere-di-vino-coltello-e.jpg?s=1024x1024&w=is&k=20&c=5Emk9BiYOc2ivCWy9pJZEk5GuwLu3-1FGfg0jl57CLo=',
+            
+        ],
+            
+        [
+               
+            
+            'company_name' => 'Mexi-Caliente',
+            'address' => 'Via del Sol, 12 - Milano',
+            'vat_no' => '98765432',
+            'img_url' => 'https://media.istockphoto.com/id/827604704/it/foto/ristorante-in-piazza-bugibba-malta.jpg?s=612x612&w=is&k=20&c=l0-gJ7USXWbXmbB44z9U6XLEqreaAZ55MbYWRWfA9eg=',
+            
+        ],
+            
+        [
+                
+            'company_name' =>  'El Sombrero',
+            'address' =>  'Via del Pueblo, 3 - Milano',
+            'vat_no'=> 34567890,
+            'img_url' => 'https://media.istockphoto.com/id/540740038/it/foto/sorridente-cameriera-e-gli-ospiti-al-tavolo.jpg?s=1024x1024&w=is&k=20&c=nFbfHINZJBNyWrMxyfQgXtnKE72RMYE0kod8wc_83WU=',
+            
+        ],
+            
+        [
+                'company_name' => 'Fiesta Mexicana',
+                'address' => 'Via del Sol, 10 - Milano',
+                'vat_no' => 45678901,
+                'img_url' => 'https://media.istockphoto.com/id/1169771473/it/foto/amici-del-gruppo-asiatico-che-cenano-a-casa-sono-felici-di-parlare.jpg?s=1024x1024&w=is&k=20&c=Qk67wkIBrU1PzsAl3o_m4mFGO5YPulo3u0ptzD0bWsA=',
+        ],
+            
         
     ];
     foreach ($restaurants as $restaurant) {
