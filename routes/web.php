@@ -31,7 +31,7 @@ Route::middleware('auth')
     ->group(function () {
 
         Route::get('/restaurant', [AdminRestaurantController::class, 'index'])->name('restaurant');
-        Route::get('/restaurant/create',[AdminRestaurantController::class, 'create']) ->name('admin.restaurant.create');
+        Route::get('/restaurants/create',[AdminRestaurantController::class, 'create']) ->name('admin.restaurant.create');
 
         Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('dashboard');
         Route::get('/projects/deleted', [AdminProjectController::class, 'deletedIndex'])->name('projects.deleted.index');

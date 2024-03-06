@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Create new Project')
+@section('title', 'Crea nuovo ristorante')
 
 @section('main-content')
 
@@ -11,13 +11,13 @@
     <div class="col-12">
 
 
-        <form action="{{ route('admin.restaurant.store') }}" method="POST">
+        {{-- <form action="{{ route('admin.restaurant.store') }}" method="POST">
             @csrf
 
            aa
         
         
-        </form>
-        
-
+        </form> --}}
+        ciao
+    </div>
 @endsection

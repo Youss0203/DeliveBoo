@@ -22,7 +22,7 @@ class RestaurantController extends Controller
      */
     public function create()
     {     
-        $restaurant = new Restaurant();
+        $restaurants = new Restaurant();
         return view('admin.restaurants.create', compact('restaurants'));
     }
 
