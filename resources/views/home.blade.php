@@ -14,7 +14,20 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('Benvenuto!') }}
+
+                    <div class="my-5">
+
+                        
+                        
+
+                        {{-- <a href="{{ route('admin.restaurant.create') }}"> --}}
+                            <button class="p-3">
+                                Aggiungi ristorante
+                            </button>
+                        {{-- </a> --}}
+                        
+                    </div>
                 </div>
             </div>
         </div>
