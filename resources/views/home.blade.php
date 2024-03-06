@@ -21,11 +21,11 @@
                         
                         
 
-                        {{-- <a href="{{ route('admin.restaurant.create') }}"> --}}
+                        <a href="{{ route('admin.restaurants.create') }}">
                             <button class="p-3">
                                 Aggiungi ristorante
                             </button>
-                        {{-- </a> --}}
+                        </a>
                         
                     </div>
                 </div>
