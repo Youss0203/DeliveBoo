@@ -23,6 +23,7 @@ class RestaurantController extends Controller
     public function create()
     {
         $restaurants = new Restaurant();
+        // $categories = Catego
         return view('admin.restaurants.create', compact('restaurants'));
     }
 
@@ -31,7 +32,13 @@ class RestaurantController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // store -> 
+        // $imageSrc = Storage::put('uploads/posts', $data['post_image']);
+        // $data['post_image'] = $imageSrc;
+
+        // update -> 
+        // $imageSrc = Storage::put('uploads/posts', $data['post_image']);
+        // $data['post_image'] = $imageSrc;
     }
 
     /**
