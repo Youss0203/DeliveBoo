@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Admin\ProjectController as AdminProjectController;
-
+use App\Http\Controllers\Admin\RestaurantController as AdminRestaurantController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,6 +29,10 @@ Route::middleware('auth')
     ->name('admin.')
     ->prefix('admin')
     ->group(function () {
+
+        Route::get('/restaurant', [AdminRestaurantController::class, 'index'])->name('restaurant');
+        Route::get('/restaurant/create',[AdminRestaurantController::class, 'create']) ->name('admin.restaurant.create');
+
         Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('dashboard');
         Route::get('/projects/deleted', [AdminProjectController::class, 'deletedIndex'])->name('projects.deleted.index');
         Route::get('/projects/deleted/{project}', [AdminProjectController::class, 'deletedShow'])->name('projects.deleted.show');

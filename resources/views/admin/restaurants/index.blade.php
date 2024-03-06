@@ -1,4 +1,4 @@
-@extends('partials.home')
+@extends('layouts.admin')
 
 @section('title', 'Admin Dashboard')
 
@@ -7,7 +7,8 @@
     <div class="row">
         
         <div class="col-12">
-            ciao
+            
+         <h1>ciaone</h1>
 
         </div>
     </div>
