@@ -446,7 +446,7 @@ class DishesSeeder extends Seeder
                 'img_url' => 'https://example.com/pad_thai.jpg',
                 'price' => 10.99,
                 'ingredients' => 'Spaghetti di riso, gamberetti, tofu, uova, arachidi, germogli di soia',
-                
+
                 'visibility' => true,
                 'description' => 'Il Pad Thai è uno dei piatti più iconici della cucina thailandese. È composto da spaghetti di riso saltati in padella con una miscela di ingredienti come gamberetti, tofu, uova, arachidi e germogli di soia, il tutto condito con una salsa a base di tamarindo e spezie.',
                 'restaurant_id' => 34,
@@ -456,7 +456,7 @@ class DishesSeeder extends Seeder
                 'img_url' => 'https://example.com/tom_yum_goong.jpg',
                 'price' => 12.50,
                 'ingredients' => 'Gamberi, funghi, erba cipollina, peperoncino, lime',
-                
+
                 'visibility' => true,
                 'description' => 'La Tom Yum Goong è una zuppa piccante e aspra a base di brodo di gamberi, arricchita con funghi, erba cipollina, peperoncino e lime. È nota per la sua combinazione di sapori freschi, piccanti e acidi, ed è un piatto classico della cucina thailandese.',
                 'restaurant_id' => 34,
@@ -466,7 +466,7 @@ class DishesSeeder extends Seeder
                 'img_url' => 'https://example.com/green_curry.jpg',
                 'price' => 14.75,
                 'ingredients' => 'Pollo, curry verde, latte di cocco, peperoni, basilico',
-                
+
                 'visibility' => true,
                 'description' => 'Il Green Curry è un curry piccante e aromatico preparato con pollo, peperoni, foglie di basilico e una miscela di spezie fresche. È cotto in una salsa a base di latte di cocco, che conferisce al piatto una consistenza cremosa e un sapore ricco.',
                 'restaurant_id' => 34,
@@ -476,7 +476,7 @@ class DishesSeeder extends Seeder
                 'img_url' => 'https://example.com/som_tum.jpg',
                 'price' => 9.99,
                 'ingredients' => 'Papaya verde, pomodori, fagiolini, arachidi, peperoncino',
-                
+
                 'visibility' => true,
                 'description' => 'La Som Tum, o insalata di papaya verde, è una vivace combinazione di sapori dolci, salati, aspri e piccanti. Preparata con papaya verde grattugiata, pomodori, fagiolini, arachidi e peperoncino, è un piatto fresco e leggero perfetto per i giorni caldi.',
                 'restaurant_id' => 35,
@@ -486,7 +486,7 @@ class DishesSeeder extends Seeder
                 'img_url' => 'https://example.com/massaman_curry.jpg',
                 'price' => 15.25,
                 'ingredients' => 'Manzo, curry massaman, patate, cipolle, arachidi',
-                
+
                 'visibility' => true,
                 'description' => 'Il Massaman Curry è un curry dal sapore ricco e avvolgente, preparato con carne di manzo tenera, patate, cipolle e arachidi. La sua caratteristica distintiva è la miscela unica di spezie, che includono cannella, chiodi di garofano e cardamomo, che conferiscono al piatto un sapore profondo e complesso.',
                 'restaurant_id' => 35,
@@ -496,7 +496,7 @@ class DishesSeeder extends Seeder
                 'img_url' => 'https://example.com/mango_sticky_rice.jpg',
                 'price' => 8.50,
                 'ingredients' => 'Riso glutinoso, mango maturo, latte di cocco, zucchero',
-                
+
                 'visibility' => true,
                 'description' => 'Il Mango Sticky Rice è un dessert tradizionale tailandese amato in tutto il mondo. È composto da riso glutinoso cotto al vapore, condito con latte di cocco e zucchero, servito con fette di mango maturo. La combinazione di sapori dolci, cremosi e tropicali lo rende un piatto irresistibile.',
                 'restaurant_id' => 35,
@@ -506,7 +506,7 @@ class DishesSeeder extends Seeder
                 'img_url' => 'https://example.com/pad_see_ew.jpg',
                 'price' => 11.50,
                 'ingredients' => 'Tagliatelle di riso, pollo, broccoli, salsa di soia, uova',
-                
+
                 'visibility' => true,
                 'description' => 'Il Pad See Ew è un piatto di tagliatelle di riso saltate in padella con pollo, broccoli, salsa di soia e uova. È un piatto semplice ma delizioso, con una combinazione di sapori dolci, salati e leggermente affumicati.',
                 'restaurant_id' => 36,
@@ -516,7 +516,7 @@ class DishesSeeder extends Seeder
                 'img_url' => 'https://example.com/red_curry.jpg',
                 'price' => 13.99,
                 'ingredients' => 'Gamberetti, curry rosso, latte di cocco, peperoni, basilico',
-                
+
                 'visibility' => true,
                 'description' => 'Il Red Curry è un curry piccante e cremoso preparato con gamberetti, peperoni, basilico e una miscela di spezie rosse. È cotto in una salsa a base di latte di cocco, che bilancia perfettamente il piccante delle spezie. È un piatto gustoso che soddisfa tutti i palati.',
                 'restaurant_id' => 36,
@@ -526,7 +526,7 @@ class DishesSeeder extends Seeder
                 'img_url' => 'https://example.com/tom_kha_gai.jpg',
                 'price' => 12.75,
                 'ingredients' => 'Pollo, funghi, lemongrass, lime, latte di cocco',
-                
+
                 'visibility' => true,
                 'description' => 'Il Tom Kha Gai è una zuppa di pollo aromatica e cremosa, preparata con funghi, lemongrass, lime e latte di cocco. È una combinazione unica di sapori dolci, piccanti e aspri, che la rende una zuppa deliziosa e confortante perfetta per qualsiasi occasione.',
                 'restaurant_id' => 36,
@@ -536,7 +536,7 @@ class DishesSeeder extends Seeder
                 'img_url' => 'https://example.com/khao_pad.jpg',
                 'price' => 10.25,
                 'ingredients' => 'Riso, pollo, uova, cipolle, carote, salsa di soia',
-                
+
                 'visibility' => true,
                 'description' => 'Il Khao Pad, o riso fritto thailandese, è un piatto semplice ma gustoso preparato con riso, pollo, uova, cipolle, carote e salsa di soia. È un piatto versatile che può essere consumato da solo o accompagnato da altre pietanze thailandesi.',
                 'restaurant_id' => 37,
@@ -555,7 +555,7 @@ class DishesSeeder extends Seeder
                 'img_url' => 'https://example.com/phat_si_io.jpg',
                 'price' => 11.75,
                 'ingredients' => 'Tagliatelle di riso, maiale, broccoli, salsa di ostriche, salsa di soia',
-                
+
                 'visibility' => true,
                 'description' => 'Il Phat Si-io è un piatto di tagliatelle di riso saltate in padella con maiale, broccoli e una salsa ricca di ostriche e salsa di soia. È un piatto saporito e appagante, perfetto per un pranzo veloce o una cena confortante.',
                 'restaurant_id' => 37,
@@ -565,7 +565,7 @@ class DishesSeeder extends Seeder
                 'img_url' => 'https://example.com/gaeng_keow_wan.jpg',
                 'price' => 14.50,
                 'ingredients' => 'Pollo, curry verde, melanzane, peperoni, basilico',
-                
+
                 'visibility' => true,
                 'description' => 'Il Gaeng Keow Wan è un curry verde cremoso e speziato preparato con pollo, melanzane, peperoni e basilico. È cotto in una salsa a base di curry verde e latte di cocco, che conferisce al piatto un sapore ricco e avvolgente. È un piatto delizioso che ti farà venire l\'acquolina in bocca.',
                 'restaurant_id' => 38,
@@ -584,7 +584,7 @@ class DishesSeeder extends Seeder
                 'img_url' => 'https://example.com/pad_kee_mao.jpg',
                 'price' => 12.99,
                 'ingredients' => 'Tagliatelle di riso, pollo, peperoni, basilico, peperoncino',
-                
+
                 'visibility' => true,
                 'description' => 'Il Pad Kee Mao è un piatto di tagliatelle di riso saltate in padella con pollo, peperoni, basilico e peperoncino. È un piatto piccante e saporito, perfetto per chi ama i sapori audaci della cucina thailandese.',
                 'restaurant_id' => 39,
@@ -594,7 +594,7 @@ class DishesSeeder extends Seeder
                 'img_url' => 'https://example.com/red_curry.jpg',
                 'price' => 13.99,
                 'ingredients' => 'Gamberetti, curry rosso, latte di cocco, peperoni, basilico',
-                
+
                 'visibility' => true,
                 'description' => 'Il Red Curry è un curry piccante e cremoso preparato con gamberetti, peperoni, basilico e una miscela di spezie rosse. È cotto in una salsa a base di latte di cocco, che bilancia perfettamente il piccante delle spezie. È un piatto gustoso che soddisfa tutti i palati.',
                 'restaurant_id' => 39,
@@ -706,7 +706,7 @@ class DishesSeeder extends Seeder
                 'img_url' => 'https://example.com/tiramisu.jpg',
                 'price' => 8.99,
                 'ingredients' => 'Savoiardi, caffè espresso, mascarpone, uova, cacao in polvere',
-                
+
                 'visibility' => true,
                 'description' => 'Il tiramisù è un dessert italiano amato in tutto il mondo. Strati di biscotti savoiardi inzuppati nel caffè vengono alternati con una crema di mascarpone leggera e soffice. Una spolverata di cacao in polvere completa questo dolce decadente e irresistibile.',
                 'restaurant_id' => 30,
@@ -766,8 +766,6 @@ class DishesSeeder extends Seeder
                 'restaurant_id' => 32,
             ],
         ];
-
-
 
         foreach ($dishes as $dish) {
             $newDish = new Dish();
