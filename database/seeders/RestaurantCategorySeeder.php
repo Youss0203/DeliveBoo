@@ -65,6 +65,7 @@ class RestaurantCategorySeeder extends Seeder
             ['restaurant_id' => 37, 'category_id' => 10],
             ['restaurant_id' => 38, 'category_id' => 10],
             ['restaurant_id' => 39, 'category_id' => 10],
+
         ];
 
         // Itera sull'array e crea i record nella tabella pivot
