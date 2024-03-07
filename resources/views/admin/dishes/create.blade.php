@@ -67,7 +67,7 @@
 
             <div class="mb-3  input-group">
                     <button class="btn btn-sm btn-success mx-1">
-                        Edit
+                        Create
                     </button>
             </div>
             <div class="mb-3  input-group">

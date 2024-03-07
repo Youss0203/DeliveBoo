@@ -29,6 +29,11 @@
                                 Aggiungi ristorante
                             </button>
                         </a>
+                        <a href="{{ route('admin.dishes.index') }}">
+                            <button class="p-3 my-4">
+                                Vedi piatto
+                            </button>
+                        </a>
                         
 
                     </div>
