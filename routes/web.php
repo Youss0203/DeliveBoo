@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
-
+use App\Http\Controllers\Admin\DishesController as AdminDishesController;
 use App\Http\Controllers\Admin\RestaurantController as AdminRestaurantController;
 /*
 |--------------------------------------------------------------------------
@@ -37,6 +37,7 @@ Route::middleware('auth')
         // Route::get('/restaurants/create', [AdminRestaurantController::class, 'create'])->name('restaurants.create');
 
         Route::resource('/restaurants', AdminRestaurantController::class);
+        Route::resource('/dishes', AdminDishesController::class);
         // Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('dashboard');
         // Route::get('/projects/deleted', [AdminProjectController::class, 'deletedIndex'])->name('projects.deleted.index');
         // Route::get('/projects/deleted/{project}', [AdminProjectController::class, 'deletedShow'])->name('projects.deleted.show');
@@ -44,7 +45,7 @@ Route::middleware('auth')
         // Route::delete('/projects/deleted/{project}', [AdminProjectController::class, 'deletedDestroy'])->name('projects.deleted.destroy');
         // Route::resource('/projects', AdminProjectController::class);
 
-        Route::resource('/restaurants', AdminRestaurantController::class);
+        //Route::resource('/restaurants', AdminRestaurantController::class);
         
         // Route::get('/restaurant', [AdminRestaurantController::class, 'index'])->name('restaurant');
         // Route::get('/restaurants/create',[AdminRestaurantController::class, 'create']) ->name('admin.restaurant.create');

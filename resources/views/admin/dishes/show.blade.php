@@ -7,29 +7,27 @@
     <div class="row">
         <div class="col-12">
             <h2>
-                {{ $project->nome }}
+                {{ $dish->name }}
             </h2>
         </div>
         <div class="col-12">
             <h2 scope="row">
-                {{ $project->id }}
+                {{ $dish->id }}
             </h2>
 
             <p>
-                {{$project->descrizione}}
+                {{$dish->ingredients}}
             </p>
 
             <p>
-                {{ $project->giorni }}
+                {{ $dish->price }} €
             </p>
             <p>
-                {{ $project->linguaggi_usati }}
+                {{ $dish->desription }}
             </p>
             <div class="p-5">
                 <p>
-                    <em>
-                         <a href="{{ $project->repo_url}}">{{ $project->repo_url}}</a>
-                    </em>
+                    <img src="{{ $dish->img_url }}" alt="">
                 </p>
             </div>
                 <button class="btn btn-sm btn-success">

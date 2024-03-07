@@ -8,33 +8,33 @@
         <div class="col-7">
             
 
-            <form action="{{ route('admin.projects.update', $project)}}" method="POST">
+            <form action="{{ route('admin.dishes.update', $dish)}}" method="POST">
                 @csrf
                 @method('PUT')
 
                 <div class="mb-3 input-group">
-                    <label for="title" class="input-group-text">Nome:</label>
-                    <input class="form-control" type="text" name="nome" id="nome" value="{{ old('nome', $project->nome)}}">
+                    <label for="title" class="input-group-text">Name:</label>
+                    <input class="form-control" type="text" name="name" id="name" value="{{ old('nome', $dish->name)}}">
                 </div>
 
                 <div class="mb-3 input-group">
-                    <label for="author" class="input-group-text">descrizione</label>
-                    <input class="form-control" type="text" name="descrizione" id="descrizione" value="{{ old('descrizione', $project->descrizione)}}">
+                    <label for="author" class="input-group-text">Ingredients:</label>
+                    <input class="form-control" type="text" name="ingredients" id="ingredients" value="{{ old('ingredients', $dish->ingredients)}}">
                 </div>
 
                 <div class="mb-3 input-group">
-                    <label for="date" class="input-group-text">Giorni</label>
-                    <input class="form-control" type="text" name="giorni" id="giorni" value="{{ old('giorni', $project->giorni)}}">
+                    <label for="date" class="input-group-text">Price:</label>
+                    <input class="form-control" type="text" name="price" id="price" value="{{ old('price', $dish->price)}}">
                 </div>
 
                 <div class="mb-3 input-group">
-                    <label for="post_image" class="input-group-text">Linguaggi usati:</label>
-                    <input class="form-control" type="text" name="linguaggi_usati" id="linguaggi_usati" value="{{ old('linguaggi_usati', $project->linguaggi_usati)}}">
+                    <label for="post_image" class="input-group-text">Description:</label>
+                    <input class="form-control" type="text" name="description" id="description" value="{{ old('description', $dish->description)}}">
                 </div>
 
                 <div class="mb-3 input-group">
-                    <label for="date" class="input-group-text">Repo Url:</label>
-                    <input class="form-control" type="text" name="repo_url" id="repo_url" value="{{ old('repo_url', $project->repo_url)}}">
+                    <label for="date" class="input-group-text">Image url:</label>
+                    <input class="form-control" type="text" name="img_url" id="img_url" value="{{ old('img_url', $dish->img_url)}}">
                 </div>
                 <div class="mb-3 input-group">
                     <button type="submit" class="btn btn-xl btn-primary">

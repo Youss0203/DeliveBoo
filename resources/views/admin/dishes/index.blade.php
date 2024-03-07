@@ -15,59 +15,61 @@
                 <thead>
                     <tr>
                         <th scope="col">ID</th>
-                        <th scope="col">Nome</th>
-                        <th scope="col">Descrizione</th>
-                        <th scope="col">giorni</th>
-                        <th scope="col">linguaggi_usati</th>
-                        <th scope="col">Repo_url</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Ingredients</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Image</th>
                         <th scope="col">Actions</th>
 
                     </tr>
                 </thead>
                 <tbody>
-                    @forelse ( $projects as $project )
+                    @forelse ( $dishes as $dish )
                         <tr>
                             <th scope="row">
-                                {{ $project->id }}
+                                {{ $dish->id }}
                             </th>
                             <td>
-                                <a href="{{ route('admin.projects.show', $project) }}">
-                                    {{ $project->nome }}
+                                <a href="{{ route('admin.dishes.show', $dish) }}">
+                                    {{ $dish->name }}
                                 </a>
                             </td>
                             <td>
-                                {{ $project->descrizione }}
+                                {{ $dish->ingredients }}
                             </td>
                             <td>
-                                {{ $project->giorni }}
+                                {{ $dish->price }}
                             </td>
-                            <td>{{ $project->linguaggi_usati }}</td>
                             <td>
-                                <a href="{{ $project->repo_url}}">{{ $project->repo_url}}</a>
+                                {{ $dish->description }}
+                            </td>
+                            <td>
+                                {{ $dish->img_url }}
                             </td>
                             <td class="d-flex p-3">
-                                <a href="{{ route('admin.projects.show', $project) }}">
+                                <a href="{{ route('admin.dishes.show', $dish) }}">
                                     <button class="btn btn-sm btn-info ">
                                         View
                                     </button>
                                 </a>
-                                <a href="{{ route('admin.projects.edit', $project) }}">
+                                <a href="{{ route('admin.dishes.edit', $dish) }}">
                                     <button class="btn btn-sm btn-success mx-1">
                                         Edit
                                     </button>
                                 </a>
-                                <a href="{{ route('admin.projects.create', $project) }}">
+                                <a href="{{ route('admin.dishes.create', $dish) }}">
                                     <button class="btn btn-sm btn-primary">
                                         Create
                                     </button>
-                                </a>
-                                 <!-- Button trigger modal -->
-                                 <button type="button" class="btn btn-warning btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal-{{ $project->id }}">
+                                </a> 
+                                 <!-- Button trigger modal --> 
+                                 <button type="button" class="btn btn-warning btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal-{{ $dish->id }}">
                                     Delete
                                 </button>
 
                                 <!-- Modal -->
-                                <div class="modal fade" id="exampleModal-{{ $project->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                 <div class="modal fade" id="exampleModal-{{ $dish->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -75,12 +77,12 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            Do you really want to delete {{ $project->nome }}?
+                                            Do you really want to delete {{ $dish->name }}?
                                         </div>
                                         <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
-                                        <form class="d-inline-block" action="{{ route('admin.projects.destroy', $project) }}" method="POST">
+                                        <form class="d-inline-block" action="{{ route('admin.dishes.destroy', $dish) }}" method="POST">
                                             @csrf
                                             @method('DELETE')
 
