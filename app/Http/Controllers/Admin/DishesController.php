@@ -7,17 +7,16 @@ use Illuminate\Http\Request;
 use App\Models\Dish;
 use App\Models\Restaurant;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class DishesController extends Controller
 {
     private $rules = [ 
         'name' => ['required', 'string', 'min:3', 'max:40'],
-        'img_url' => ['required', 'url', 'image'],
-        'price' => ['required', 'decimal:10', 'max:10'],
+        'img_url' => ['required', 'image',],
+        'price' => ['required', 'decimal:2',],
         'ingredients' => ['required', 'string'],
-        'visibility' => ['required', 'boolean'],
         'description' => ['required', 'string'],
-        'restaurant_id' => ['required', 'exists:restaurants,id'],
         
     ];
     /**
@@ -37,6 +36,7 @@ class DishesController extends Controller
     {
         $dish = new Dish();
         return view('admin.dishes.create', compact('dish'));
+
     }
 
     /**
@@ -46,10 +46,16 @@ class DishesController extends Controller
     {
         
         $data = $request->validate($this->rules);
+        $data['visibility'] = isset($data['visibility']);
         $data['restaurant_id'] = Restaurant::where('id', Auth::id())->pluck('id')->first();
         
+        $imageSrc = Storage::put('uploads/dishes', $data['img_url']);
+        $data['img_url'] = $imageSrc;
+
         $newDish = Dish::create($data);
         return redirect()->route('admin.dishes.show', $newDish);
+
+        
     }
 
     /**
@@ -57,7 +63,11 @@ class DishesController extends Controller
      */
     public function show(Dish $dish)
     {
+
+        
         return view('admin.dishes.show', compact('dish'));
+
+
     }
 
     /**
@@ -75,7 +85,13 @@ class DishesController extends Controller
     public function update(Request $request, Dish $dish)
     {
         $data = $request->validate($this->rules);
+        $data['visibility'] = isset($data['visibility']);
+
+        $imageSrc = Storage::put('uploads/dishes', $data['img_url']);
+        $data['img_url'] = $imageSrc; 
+
         $dish->update($data);
+        
         return redirect()->route('admin.dishes.show', $dish);
     }
 
