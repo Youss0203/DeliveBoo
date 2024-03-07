@@ -26,9 +26,13 @@
                 {{ $dish->desription }}
             </p>
             <div class="p-5">
-                <p>
-                    <img src="{{ $dish->img_url }}" alt="">
-                </p>
+
+            @if ( str_starts_with($dish->img_url, 'http'))
+                <img src="{{ $dish->img_url }}" alt="">
+            @else
+                <img src="{{ asset('storage') . '/' . $dish->img_url }}" alt="">
+            @endif
+
             </div>
                 <button class="btn btn-sm btn-success">
                     Edit

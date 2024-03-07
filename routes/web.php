@@ -20,7 +20,7 @@ use App\Http\Controllers\Admin\RestaurantController as AdminRestaurantController
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Auth::routes();
