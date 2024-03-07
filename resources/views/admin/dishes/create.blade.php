@@ -9,9 +9,21 @@
 
 <section class="container">
     <div class="col-12">
+        <div class="col-12">
+            {{-- Errors alert --}}
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+    @endif
+        </div>
 
 
-        <form action="{{ route('admin.dishes.store') }}" method="POST">
+        <form action="{{ route('admin.dishes.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
 
             <div class="mb-3 input-group">
@@ -57,12 +69,16 @@
             </div>
 
             <div class="mb-3 input-group">
-                <label for="linguaggio_usato" class="input-group-text">Image url:</label>
-                <input class="form-control" type="text" name="img_url" id="img_url" value="{{ old('img_url') }}">
+                
+                <input class="form-control" type="file" name="img_url" id="img_url" value="{{ old('img_url') }}">
             </div>
-            <div class="mb-3 input-group">
-                <label for="linguaggio_usato" class="input-group-text">Visibility:</label>
-                <input class="form-control" type="text" name="visibility" id="ivisibility" value="{{ old('visibility') }}">
+            <div class="mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="visibility" id="visibility" @checked(old('visibility', $dish->visibility))>
+                    <label class="form-check-label" for="visibility">
+                        Visible
+                    </label>
+                </div>
             </div>
 
             <div class="mb-3  input-group">

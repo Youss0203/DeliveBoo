@@ -46,7 +46,13 @@
                                 {{ $dish->description }}
                             </td>
                             <td>
-                                {{ $dish->img_url }}
+                                <div width="10">
+                                    @if ( str_starts_with($dish->img_url, 'http'))
+                <img class="img-fluid" src="{{ $dish->img_url }}" alt="">
+            @else
+                <img src="{{ asset('storage') . '/' . $dish->img_url }}" alt="">
+            @endif
+                                </div>
                             </td>
                             <td class="d-flex p-3">
                                 <a href="{{ route('admin.dishes.show', $dish) }}">
