@@ -7,7 +7,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Restaurant;
 
-class RestaurantCategorySeeder extends Seeder
+class CategoryRestaurantSeeder extends Seeder
 {
     /**
      * Run the database seeds.
