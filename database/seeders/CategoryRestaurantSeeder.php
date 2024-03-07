@@ -7,7 +7,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Restaurant;
 
-class RestaurantCategorySeeder extends Seeder
+class CategoryRestaurantSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -72,8 +72,9 @@ class RestaurantCategorySeeder extends Seeder
         foreach ($restaurantCategories as $rc) {
             // Verifica se entrambi i ristoranti e le categorie esistono prima di aggiungere il record
             if (Restaurant::find($rc['restaurant_id']) && Category::find($rc['category_id'])) {
-                DB::table('category_restaurant')->insert($rc);
+                \DB::table('category_restaurant')->insert($rc);
             }
         }
     }
 }
+
