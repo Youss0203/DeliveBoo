@@ -10,6 +10,7 @@
                 Questi sono i progetti presenti {{ Auth::user()->name }}!
             </h2>
         </div>
+        <!--ciaoooooo1-->
         <div class="col-12">
             <table class="table table-striped table-hover">
                 <thead>
