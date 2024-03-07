@@ -16,7 +16,7 @@ class DishesSeeder extends Seeder
         $dishes = [
             [
                 'name' => 'Tajine',
-                'img_url' => 'https://media.istockphoto.com/id/1143191816/it/foto/tagine-di-pollo-tradizionale-marocchino-con-olive-e-limoni-salati.jpg?s=1024x1024&w=is&k=20&c=HvfkCwd_HyYNqmBwHqvxHTieNuXfVTiot3hq3gOg0fM=',
+                'img_url' => 'https://media.istockphoto.com/id/1143191816/it/foto/tagine-di-pollo-tradizionale-marocchino-con-olive-e-limoni-salati.jpg?s=612x612&w=0&k=20&c=kx5ht-tNO68IwGj354V4AFzxMBcnRBg4uFk-qRNIsgU=',
                 'price' => 35,
                 'ingredients' => 'Carne (di solito pollo, agnello o manzo), verdure (come carote, patate, zucchine), frutta secca (come prugne, albicocche), spezie (come cumino, zenzero, cannella)',
                 'visibility' => true,
@@ -26,7 +26,7 @@ class DishesSeeder extends Seeder
 
             [
                 'name' => 'Bastilla',
-                'img_url' => 'https://media.istockphoto.com/id/1329347807/it/foto/bastila-o-pastilla-è-un-piatto-marocchino-taradizionale-la-bastila-di-pollo-è-una-torta-piena.jpg?s=1024x1024&w=is&k=20&c=0dpwhMBV80DaIv4qkcdPuzSp7X_ujltmp31BY8XWmOo=',
+                'img_url' => 'https://media.istockphoto.com/id/1294321365/it/foto/tipico-pollo-marocchino-bisteeya-o-bastilla-su-un-piatto-bianco.jpg?s=612x612&w=0&k=20&c=ZIYfa9VUB4BWXKA25iAgvRaqFFjoXsRGf5hrMvuN0AE=',
                 'price' => 70,
                 'ingredients' => 'Fogli di pasta fillo, pollo o pesce, mandorle, uova, cipolle, spezie (come cannella, zafferano), zucchero a velo',
                 'visibility' => true,
@@ -36,7 +36,7 @@ class DishesSeeder extends Seeder
 
             [
                 'name' => 'Cous Cous',
-                'img_url' => 'https://media.istockphoto.com/id/1186400879/it/foto/un-piatto-di-tajine.jpg?s=1024x1024&w=is&k=20&c=Y0dJtsoNhpmJwOEhUgD4HNFwWize7jETFwb8fMq_cDo=',
+                'img_url' => 'https://media.istockphoto.com/id/175230124/it/foto/cuscus.jpg?s=612x612&w=0&k=20&c=xWokBeoeqGdMAqcfAw1nA-K8fX0ag1-C3blCXuBx0Ig=',
                 'price' => 55,
                 'ingredients' => 'Semola di grano duro, verdure (come carote, zucchine, cipolle), carne (di solito agnello o pollo), spezie (come curcuma, cannella, zenzero)',
                 'visibility' => true,
@@ -45,7 +45,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Sashimi',
-                'img_url' => 'https://media.istockphoto.com/id/621899966/it/foto/sashimi-di-salmone-a-fette-menu-delizioso-di-cibo-crudo-giapponese.jpg?s=1024x1024&w=is&k=20&c=JQ2es5gT67nl9Np0fdlxu7w-X8sMH2sUVE-PzGhrnb4=',
+                'img_url' => 'https://media.istockphoto.com/id/621899966/it/foto/sashimi-di-salmone-a-fette-menu-delizioso-di-cibo-crudo-giapponese.jpg?s=612x612&w=0&k=20&c=zOiieTDFQJ7FiDfdKujo_ljzHUIRYM3YN-VQnpr_Dlg=',
                 'price' => 3.50,
                 'ingredients' => 'Pesce crudo',
                 'visibility' => true,
@@ -54,7 +54,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Sushi',
-                'img_url' => 'https://media.istockphoto.com/id/1053855452/it/foto/sushi-impostato-su-piatto-di-bambù.jpg?s=1024x1024&w=is&k=20&c=-kByBkA1QVrSEl4_n2GYbF2IeWAJ2wdo8A0-Ob3hAqg=',
+                'img_url' => 'https://media.istockphoto.com/id/1053855542/it/foto/bacchetta-con-pezzo-di-sushi-nigiri.jpg?s=612x612&w=0&k=20&c=Cm4kNnp4MjNCqkW9yNtInrkYYqp_zf8cm2gfuxMa-ME=',
                 'price' => 4,
                 'ingredients' => 'Pesce crudo, riso, alghe nori',
                 'visibility' => true,
@@ -63,7 +63,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Ramen',
-                'img_url' => 'https://media.istockphoto.com/id/1365977387/it/foto/ramen-con-sfrigolio-fumante.jpg?s=1024x1024&w=is&k=20&c=pHK6akYoYsAH9z_TGN3vTYqLYam8mqXlXuGh3z859zE=',
+                'img_url' => 'https://media.istockphoto.com/id/1135293039/it/foto/ramen-noodle-asiatico-in-brodo-con-carne-di-lingua-di-manzo-funghi-e-uovo-sottaceto-ajitama-in.jpg?s=612x612&w=0&k=20&c=3Lc3hIX3rRgyQvR88jTHhTlgMs4Zy8HYWHF60zUSFr8=',
                 'price' => 6,
                 'ingredients' => 'Noodle, brodo, carne (opzionale), uovo, cipollotti',
                 'description' => 'Il ramen è un piatto giapponese estremamente popolare e amato in tutto il mondo. È composto principalmente da una base di brodo, noodles, e una varietà di ingredienti che possono includere carne, verdure, uova e condimenti.',
@@ -72,7 +72,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Tempura',
-                'img_url' => 'https://media.istockphoto.com/id/184274745/it/foto/tempura-di-gamberi.jpg?s=1024x1024&w=is&k=20&c=T9gcgGLOUpnYvKBDxJeIOKoEHDao-AFNUZOhFEh4-f0=',
+                'img_url' => 'https://media.istockphoto.com/id/629614394/it/foto/deliziosi-gamberi-in-tempura-con-salsa-agrodolce.jpg?s=612x612&w=0&k=20&c=-rLaV2hx95xpK5ScXbzQBASvdwcXsz9EOQsj-vqCqxY=',
                 'price' => 2,
                 'ingredients' => 'Verdure (come zucchine, carote), gamberi, pesce, pastella',
                 'visibility' => true,
@@ -81,7 +81,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Patatas Bravas con salsa piccante',
-                'img_url' => 'https://cdn.cook.stbm.it/thumbnails/ricette/145/145022/hd1600x900.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/1130702198/it/foto/un-piatto-di-papas-bravas-fatto-con-patate-peperoni-e-aglio-pasto-tipico-da-tarifa-andalusia.jpg?s=612x612&w=0&k=20&c=c5AfUxcMTlU32rwyQlIy5qAry4hNEVJKAiq3ZCvwYFU=',
                 'price' => 8.50,
                 'ingredients' => 'Patate, Salsa di pomodoro, Maionese, Pepe di Cayenna, Aglio, Olio d\'oliva, Sale e pepe',
                 'visibility' => true,
@@ -221,7 +221,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Costine St. Louis Fumanti',
-                'img_url' => 'https://media.istockphoto.com/id/1221822964/it/foto/lento-arrostito-st-louis-stile-bambino-indietro-costole-di-maiale.jpg?s=1024x1024&w=is&k=20&c=r9q3j4rOk6oxTLmYTLwFxvSv7Egb3ivESr16ynwhADA=',
+                'img_url' => 'https://media.istockphoto.com/id/823615974/it/foto/costolette-di-maiale-affumicate-fatte-in-casa-in-stile-st-louis.jpg?s=612x612&w=0&k=20&c=qwjZazxbmRKiSWtGd6oxp_OpUf2XDwuha4whb8zh-6U=',
                 'price' => 18.99,
                 'ingredients' => 'frizione a secco, salsa barbecue segreta di Big Al',
                 'description' => 'Costine di maiale in stile St. Louis',
@@ -253,7 +253,7 @@ class DishesSeeder extends Seeder
 
             [
                 'name' => 'Pollo Fritto alla Southern con Waffle',
-                'img_url' => 'https://media.istockphoto.com/id/1325150602/it/foto/cialde-con-pollo-fritto.jpg?s=1024x1024&w=is&k=20&c=ujZ_y2YbnHcXZ7cENgRuhPsPoJOyh_H6rkYPdotxaSM=',
+                'img_url' => 'https://media.istockphoto.com/id/844129660/it/foto/pollo-fritto-croccante-degli-stati-uniti-meridionali.jpg?s=612x612&w=0&k=20&c=zJym5lmhl8llWVGgHWddEkPu4tyKktjopAzap7gTeqA=',
                 'price' => 15.99,
                 'ingredients' => 'Pollo fritto al latticello, waffle belga, sciroppo d\'acero',
                 'visibility' => true,
@@ -264,7 +264,7 @@ class DishesSeeder extends Seeder
             [
 
                 'name' => 'La Torta del Peccatore',
-                'img_url' => 'https://media.istockphoto.com/id/855118160/it/foto/torta-di-bacche-di-natale.jpg?s=1024x1024&w=is&k=20&c=aKs6awqCFv5-QmPuaUnqUo86rNLX3Scf8bJnIyfTc4U=',
+                'img_url' => 'https://media.istockphoto.com/id/971514208/it/foto/deliziosa-pasticceria-con-marmellata-di-prugne-da-vicino-vista-superiore-verticale.jpg?s=612x612&w=0&k=20&c=JAbfkW22UJLShffBn0JOiat1rq97C_RNjvvU05uiII8=',
                 'price' => 8.99,
                 'ingredients' => 'Pan di Spagna al cacao,Mousse al cioccolato fondente,Ganache al caramello salato,Noci pecan pralinate',
                 'visibility' => true,
@@ -274,7 +274,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Burrito con Pollo e Riso',
-                'img_url' => 'https://media.istockphoto.com/id/912134046/it/foto/ciotola-di-burrito-di-pollo-messicano-fatta-in-casa-con-riso-fagioli-mais-pomodoro-avocado.jpg?s=1024x1024&w=is&k=20&c=6bK-ZqsrkBMMFMFfjovYeCXm8vqQVRN-cBh_WDzXofo=',
+                'img_url' => 'https://media.istockphoto.com/id/1317280854/it/foto/burrito-di-riso-e-pollo-messicano.jpg?s=612x612&w=0&k=20&c=PDrwlx82t8TolH8J_ue9591Owhyib3vxZZSS1IqS-dY=',
                 'price' => 10.00,
                 'ingredients' => 'Tortilla di farina, pollo, riso bianco, fagioli neri, pomodori, lattuga, formaggio cheddar, panna acida, salsa guacamole, salsa pico de gallo',
                 'visibility' => true,
@@ -284,7 +284,7 @@ class DishesSeeder extends Seeder
 
             [
                 'name' => 'Fajitas di Manzo con Verdure',
-                'img_url' => 'https://media.istockphoto.com/id/1175732553/it/foto/manzo-piccante-verdure-avocado-tortillas-di-mais-fajitas-su-una-padella-su-un-foglio-su-sfondo.jpg?s=1024x1024&w=is&k=20&c=im67woDNNArw7KO3JoqMf1M6l1eyAhrorU0xh6FI60c=',
+                'img_url' => 'https://media.istockphoto.com/id/1001472234/it/foto/gustosi-tacos-messicani-con-ripieno-di-fajita-di-manzo-servito-con-salsa.jpg?s=612x612&w=0&k=20&c=NnqhG9r0lHqeZdQ-yfSmaKtRZF_gAoMivXme0SJVe6I=',
                 'price' => 12.00,
                 'ingredients' => 'Manzo, peperoni, cipolle, peperoncino jalapeno, tortillas di mais, spezie per fajitas, olio d\'oliva, sale e pepe',
                 'visibility' => true,
@@ -294,7 +294,7 @@ class DishesSeeder extends Seeder
 
             [
                 'name' => 'Guacamole con Nachos',
-                'img_url' => 'https://media.istockphoto.com/id/1147614546/it/foto/ciotola-di-guacamole-con-patatine-tortilla.jpg?s=1024x1024&w=is&k=20&c=iHKvR9h3S7Q1C78P5yTp66tdFWpkF0Oh7U1U8aMPthA=',
+                'img_url' => 'https://media.istockphoto.com/id/618556928/it/foto/ciotola-di-guacamole-con-patatine-tortilla.jpg?s=612x612&w=0&k=20&c=IZ8YkX2zzNNw7-ffWpPTrtszUsP7DFMLk-olxN3ubD4=',
                 'price' => 7.00,
                 'ingredients' => 'Avocado, pomodori, cipolla, peperoncino jalapeno, coriandolo, lime, olio d\'oliva, sale e pepe, tortilla chips',
                 'visibility' => true,
@@ -305,7 +305,7 @@ class DishesSeeder extends Seeder
             // piatti dei ristoranti aggiunti da berna 
             [
                 "name" => "Pollo Tikka Masala",
-                "img_url" => "https://example.com/tikka_masala.jpg",
+                "img_url" => "https://media.istockphoto.com/id/1227594550/it/foto/pollo-al-curry-burro-di-pollo-cremoso.jpg?s=612x612&w=0&k=20&c=qMtjij8CaMR3U2-Y2kBqMi6-MdsbrtQ9rDwth-MdJTo=",
                 "price" => 12.50,
                 "ingredients" => "Pollo, pomodoro, panna, spezie tikka masala",
                 "visibility" => true,
@@ -314,7 +314,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 "name" => "Paneer Tikka",
-                "img_url" => "https://example.com/paneer_tikka.jpg",
+                "img_url" => "https://media.istockphoto.com/id/693946394/it/foto/paneer-tikka-kabab-spiedini-di-formaggio-indiano-tandoori-o-paneer-barbecue-messa-a-fuoco.jpg?s=612x612&w=0&k=20&c=YYCwhtBa9Rnos11y8ajMugWRxn1eIOSdD9EaKZq-MYM=",
                 "price" => 10.99,
                 "ingredients" => "Paneer, yogurt, spezie tikka, peperoni",
                 "visibility" => true,
@@ -323,7 +323,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 "name" => "Biryani di Agnello",
-                "img_url" => "https://example.com/biryani_agnello.jpg",
+                "img_url" => "https://media.istockphoto.com/id/1407172002/it/foto/biryani-di-montone-piccante-indiano-con-raita-e-gulab-jamun-servito-in-un-piatto-vista.jpg?s=612x612&w=0&k=20&c=QXaFI2SzUqtHX2yi_k_iaHKB33xSC4ptR9A1tnQWCk4=",
                 "price" => 14.75,
                 "ingredients" => "Agnello, riso basmati, spezie biryani, cipolla fritta",
                 "visibility" => true,
@@ -332,7 +332,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 "name" => "Samosa",
-                "img_url" => "https://example.com/samosa.jpg",
+                "img_url" => "https://media.istockphoto.com/id/980106992/it/foto/spuntino-samosa-servito-con-ketchup-di-pomodoro-e-chutney-alla-menta.jpg?s=612x612&w=0&k=20&c=A7JIpt9M52pLG4Tq3fV1Xyy0h1tyV3RCFBIDcxApUfI=",
                 "price" => 7.25,
                 "ingredients" => "Patate, piselli, pasta di farina, spezie garam masala",
                 "visibility" => true,
@@ -341,7 +341,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 "name" => "Palak Paneer",
-                "img_url" => "https://example.com/palak_paneer.jpg",
+                "img_url" => "https://media.istockphoto.com/id/851889508/it/foto/palak-paneer.jpg?s=612x612&w=0&k=20&c=v8kedHbLZt-NAX_RePd5tNWdbCsQys6FouzNKyJcuMs=",
                 "price" => 11.50,
                 "ingredients" => "Paneer, spinaci, pomodoro, spezie indiane",
                 "visibility" => true,
@@ -350,7 +350,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 "name" => "Chicken Korma",
-                "img_url" => "https://example.com/chicken_korma.jpg",
+                "img_url" => "https://media.istockphoto.com/id/486741528/it/foto/pollo-korma.jpg?s=612x612&w=0&k=20&c=OviCFVheSUXsjIC4NFgiKur-bAtFxo6lDyjcY06iJZU=",
                 "price" => 13.99,
                 "ingredients" => "Pollo, mandorle, panna, spezie korma",
                 "visibility" => true,
@@ -359,7 +359,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 "name" => "Dal Tadka",
-                "img_url" => "https://example.com/dal_tadka.jpg",
+                "img_url" => "https://media.istockphoto.com/id/541305426/it/foto/zuppa-di-zucca-con-panna-e-carota-e-prezzemolo.jpg?s=612x612&w=0&k=20&c=q_3Z9sjuvbDQyQedXaN11Z59aJ6XJl2pGL51oAb4VjI=",
                 "price" => 9.75,
                 "ingredients" => "Lenticchie gialle, pomodoro, spezie tadka, burro chiarificato",
                 "visibility" => true,
@@ -368,7 +368,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 "name" => "Butter Chicken",
-                "img_url" => "https://example.com/butter_chicken.jpg",
+                "img_url" => "https://media.istockphoto.com/id/1472620857/it/foto/gustoso-piatto-di-pollo-al-curry-al-burro-della-cucina-indiana.jpg?s=612x612&w=0&k=20&c=M8WeotRoFAA3X5j0HhGyl0EbyTVXI3jgjyYPULZ73fw=",
                 "price" => 15.25,
                 "ingredients" => "Pollo, pomodoro, panna, burro, spezie masala",
                 "visibility" => true,
@@ -377,7 +377,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 "name" => "Naan",
-                "img_url" => "https://example.com/naan.jpg",
+                "img_url" => "https://media.istockphoto.com/id/1298748782/it/foto/focaccia-tradizionale-indiana-naan.jpg?s=612x612&w=0&k=20&c=f9yGGbQkPt2X4c_nb5yXbNk8La_09ygLfwviY6hJbro=",
                 "price" => 5.99,
                 "ingredients" => "Farina, lievito, yogurt, burro chiarificato",
                 "visibility" => true,
@@ -386,7 +386,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 "name" => "Mango Lassi",
-                "img_url" => "https://example.com/mango_lassi.jpg",
+                "img_url" => "https://media.istockphoto.com/id/1365859011/it/foto/bevi-lassi-di-mango-in-due-bicchieri-su-un-tavolo-rustico-in-cemento-con-manfo-fresco-tagliato.jpg?s=612x612&w=0&k=20&c=URC9id_bLdHIrEypt2Cr3q5S9aD0kO6nTgwm3GJQ45E=",
                 "price" => 6.50,
                 "ingredients" => "Mango, yogurt, zucchero, cardamomo",
                 "visibility" => true,
@@ -395,7 +395,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 "name" => "Chana Masala",
-                "img_url" => "https://example.com/chana_masala.jpg",
+                "img_url" => "https://media.istockphoto.com/id/1295943731/it/foto/chana-masala-o-chole-in-ciotola-nera-sul-piano-del-tavolo-in-ardesia-scura-cucina-indiana-veg.jpg?s=612x612&w=0&k=20&c=K1JprLYA-9wwQb11MvQmbLSaBCOnZnOLLxDiPo5D8KI=",
                 "price" => 10.50,
                 "ingredients" => "Ceci, pomodoro, cipolla, spezie masala",
                 "visibility" => true,
@@ -404,7 +404,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 "name" => "Tandoori Chicken",
-                "img_url" => "https://example.com/tandoori_chicken.jpg",
+                "img_url" => "https://media.istockphoto.com/id/1227594550/it/foto/pollo-al-curry-burro-di-pollo-cremoso.jpg?s=612x612&w=0&k=20&c=qMtjij8CaMR3U2-Y2kBqMi6-MdsbrtQ9rDwth-MdJTo=",
                 "price" => 14.25,
                 "ingredients" => "Pollo, yogurt, spezie tandoori, succo di limone",
                 "visibility" => true,
@@ -413,7 +413,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 "name" => "Raita",
-                "img_url" => "https://example.com/raita.jpg",
+                "img_url" => "https://media.istockphoto.com/id/1056787708/it/foto/salsa-di-yogurt-con-erbe-aromatiche-spezie-e-cetriolo-primo-up-sul-tavolo-raita-vista.jpg?s=612x612&w=0&k=20&c=Jhqq8h6uyVnpMRpUey1aw9E-6uQR9rsbrRqtMdEbFFk=",
                 "price" => 5.75,
                 "ingredients" => "Yogurt, cetriolo, pomodoro, spezie",
                 "visibility" => true,
@@ -422,7 +422,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 "name" => "Pakora",
-                "img_url" => "https://example.com/pakora.jpg",
+                "img_url" => "https://media.istockphoto.com/id/1334330780/it/foto/piatto-pakora-di-pollo-con-salsa-di-peperoncino-dolce-su-tavola-di-legno-bianco.jpg?s=612x612&w=0&k=20&c=Ys4jAvo2TxnYWm9OWojZnmGBqD23EUeSVRv7Y3ydyVo=",
                 "price" => 8.99,
                 "ingredients" => "Verdure miste, farina di ceci, spezie, olio per friggere",
                 "visibility" => true,
@@ -431,7 +431,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 "name" => "Murg Makhani (Burro Chicken)",
-                "img_url" => "https://example.com/burro_chicken.jpg",
+                "img_url" => "https://media.istockphoto.com/id/1295019814/it/foto/murgh-makhani-o-pollo-al-burro-in-ciotola-nera-sul-piano-scuro-del-tavolo-in-ardesia-piatto-di.jpg?s=612x612&w=0&k=20&c=wcCXOFC9p5QoGBp2IbY3_cBsFBH75y1RhS17CapsxW0=",
                 "price" => 16.50,
                 "ingredients" => "Pollo, pomodoro, panna, burro, spezie masala",
                 "visibility" => true,
@@ -443,7 +443,7 @@ class DishesSeeder extends Seeder
 
             [
                 'name' => 'Pad Thai',
-                'img_url' => 'https://example.com/pad_thai.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/510163478/it/foto/pad-thai.jpg?s=612x612&w=0&k=20&c=sQP_r5Z8-vnXgGJWiC3aEw7pLwZdYSFhHxyIFqUVt5M=',
                 'price' => 10.99,
                 'ingredients' => 'Spaghetti di riso, gamberetti, tofu, uova, arachidi, germogli di soia',
 
@@ -453,7 +453,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Tom Yum Goong',
-                'img_url' => 'https://example.com/tom_yum_goong.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/995757154/it/foto/zuppa-calda-e-acida-il-cibo-tradizionale-in-thailandia-contiene-galangal-allo-zenzero-al.jpg?s=612x612&w=0&k=20&c=_W50hXhRB9WThVab9grQBBJttpn4j0B_bPKAPLtncbw=',
                 'price' => 12.50,
                 'ingredients' => 'Gamberi, funghi, erba cipollina, peperoncino, lime',
 
@@ -463,7 +463,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Green Curry',
-                'img_url' => 'https://example.com/green_curry.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/174682480/it/foto/curry-verde-tailandese-moderno.jpg?s=612x612&w=0&k=20&c=3RwuuOvgbV_LWqspmBmkTYEYBtqLQGb0DHgzMycmUqU=',
                 'price' => 14.75,
                 'ingredients' => 'Pollo, curry verde, latte di cocco, peperoni, basilico',
 
@@ -473,7 +473,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Som Tum',
-                'img_url' => 'https://example.com/som_tum.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/1395642907/it/foto/insalata-di-papaya-verde-in-un-piatto-nero-su-un-tavolo-di-legno-vista-dallalto-vista-dallalto.jpg?s=612x612&w=0&k=20&c=8Uy1VwrEEdb3Wap3mjxId0N9w2nKIWRZHY6ekiY6r-k=',
                 'price' => 9.99,
                 'ingredients' => 'Papaya verde, pomodori, fagiolini, arachidi, peperoncino',
 
@@ -483,7 +483,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Massaman Curry',
-                'img_url' => 'https://example.com/massaman_curry.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/1151284259/it/foto/curry-massaman-di-manzo-con-riso-su-tavola-di-legno-cibo-tailandese.jpg?s=612x612&w=0&k=20&c=ADzbFSlHhD80cJRXAFatvX0Km0QmP1bZ-na3fC260p0=',
                 'price' => 15.25,
                 'ingredients' => 'Manzo, curry massaman, patate, cipolle, arachidi',
 
@@ -493,7 +493,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Mango Sticky Rice',
-                'img_url' => 'https://example.com/mango_sticky_rice.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/1147326546/it/foto/mango-e-riso-appiccicoso-dolce-tradizionale-tailandese.jpg?s=612x612&w=0&k=20&c=dl6_uUZLmqdP4TsEtnzKGVvKabYjRavMtdi45J5wDVk=',
                 'price' => 8.50,
                 'ingredients' => 'Riso glutinoso, mango maturo, latte di cocco, zucchero',
 
@@ -503,7 +503,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Pad See Ew',
-                'img_url' => 'https://example.com/pad_see_ew.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/1327025495/it/foto/pad-vedere-piastra-ew.jpg?s=612x612&w=0&k=20&c=jTNbWCC-yH59gFhEeieoeW62hSZWMS0L6HpYK3nyyzo=',
                 'price' => 11.50,
                 'ingredients' => 'Tagliatelle di riso, pollo, broccoli, salsa di soia, uova',
 
@@ -513,7 +513,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Red Curry',
-                'img_url' => 'https://example.com/red_curry.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/1225795312/it/foto/zuppa-di-curry-di-tofu-con-verdure.jpg?s=612x612&w=0&k=20&c=gmcDaoMQxuChaS7VZIUvfY5JxvOCiQ2WKD-mdueAPVg=',
                 'price' => 13.99,
                 'ingredients' => 'Gamberetti, curry rosso, latte di cocco, peperoni, basilico',
 
@@ -523,7 +523,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Tom Kha Gai',
-                'img_url' => 'https://example.com/tom_kha_gai.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/1284712912/it/foto/cibo-tradizionale-tailandese-tom-kha-gai-in-ciotola.jpg?s=612x612&w=0&k=20&c=QuTWnCX1bBW9qMe5KdiYjUyts9rVG6Z_6SzFmVCBEQ0=',
                 'price' => 12.75,
                 'ingredients' => 'Pollo, funghi, lemongrass, lime, latte di cocco',
 
@@ -533,7 +533,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Khao Pad',
-                'img_url' => 'https://example.com/khao_pad.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/1221574194/it/foto/street-food-tailandese-riso-al-gelsomino-fritto-khao-phad-kung-con-gamberi-e-cipollotti-con.jpg?s=612x612&w=0&k=20&c=dQeLbIGK6iP_W1czCJKPD-5Tfzkdlytq2uhHU0O-T0w=',
                 'price' => 10.25,
                 'ingredients' => 'Riso, pollo, uova, cipolle, carote, salsa di soia',
 
@@ -543,7 +543,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Papaya Salad',
-                'img_url' => 'https://example.com/papaya_salad.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/527439207/it/foto/som-tam-thai-verde-tailandese-insalata-di-papaya-con-arachidi.jpg?s=612x612&w=0&k=20&c=es5bfgYlcheRRbPzehbhcvgW12bhSKiGbp8CFz6F5Pc=',
                 'price' => 9.25,
                 'ingredients' => 'Papaya verde, pomodori, fagiolini, arachidi, peperoncino',
                 'visibility' => true,
@@ -552,7 +552,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Phat Si-io',
-                'img_url' => 'https://example.com/phat_si_io.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/1212812600/it/foto/pad-gamberi-vedere-ew-isolato-su-sfondo-bianco-pad-see-ew-%C3%A8-un-piatto-di-cucina-tailandese-con.jpg?s=612x612&w=0&k=20&c=S8ZUuk0e_uWcj5ZXb46-2HCWmPzLsq73P7X8kQdqwiY=',
                 'price' => 11.75,
                 'ingredients' => 'Tagliatelle di riso, maiale, broccoli, salsa di ostriche, salsa di soia',
 
@@ -562,7 +562,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Gaeng Keow Wan',
-                'img_url' => 'https://example.com/gaeng_keow_wan.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/1267616276/it/foto/famoso-curry-di-cocco-verde-tailandese-di-fama-internazionale-gaeng-keow-wan-gai-con-pollo-in.jpg?s=612x612&w=0&k=20&c=eBfjooh2Gz6eCIz3de_F7cWNmJLli1mHMoyftBTTbCQ=',
                 'price' => 14.50,
                 'ingredients' => 'Pollo, curry verde, melanzane, peperoni, basilico',
 
@@ -572,7 +572,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Yam Neua',
-                'img_url' => 'https://example.com/yam_neua.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/1648055182/it/foto/nasi-bakar-%C3%A8-riso-con-un-contorno-avvolto-in-foglie-di-banana-e-poi-grigliato-su-un-fuoco-o.jpg?s=612x612&w=0&k=20&c=8IKSMRHaogEEmDV2foEgurk5DnDUm3_xVsTcJBe1sHQ=',
                 'price' => 13.50,
                 'ingredients' => 'Bistecca di manzo, pomodori, cipolle, menta, peperoncino',
                 'visibility' => true,
@@ -581,7 +581,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Pad Kee Mao',
-                'img_url' => 'https://example.com/pad_kee_mao.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/1208592696/it/foto/thai-drunken-noodles-o-pad-kee-mao-in-ciotola-nera-su-sfondo-ardesia-scura-drunken-noodles-%C3%A8.jpg?s=612x612&w=0&k=20&c=v0cPUqRJXmJu9WZ_muatcvQFABfjnKGlG8csfcpn4JE=',
                 'price' => 12.99,
                 'ingredients' => 'Tagliatelle di riso, pollo, peperoni, basilico, peperoncino',
 
@@ -591,7 +591,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Red Curry',
-                'img_url' => 'https://example.com/red_curry.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/1130228942/it/foto/indiano-dal-lenticchie-tradizionali-indiane-curry-piccante-dhal-indiano-in-ciotola-spezie-erbe.jpg?s=612x612&w=0&k=20&c=zClYLR_rDNVUJ1vAp26XHvM7mLJoTJx3y7mt9FNOnws=',
                 'price' => 13.99,
                 'ingredients' => 'Gamberetti, curry rosso, latte di cocco, peperoni, basilico',
 
@@ -604,7 +604,7 @@ class DishesSeeder extends Seeder
 
             [
                 'name' => 'Spaghetti alla Carbonara',
-                'img_url' => 'https://example.com/spaghetti_carbonara.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/1312758295/it/foto/pasta-tradizionale-italiana-alla-carbonara-con-uova-di-guanciale-e-pecorino.jpg?s=612x612&w=0&k=20&c=Y1ntgQ6qGSNoSFd1s8OaB9AkElPdsLFX_uC50UoUOUs=',
                 'price' => 12.99,
                 'ingredients' => 'Spaghetti, guanciale, uova, pecorino romano, pepe nero',
                 'visibility' => true,
@@ -613,7 +613,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Pizza Margherita',
-                'img_url' => 'https://example.com/pizza_margherita.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/1414575281/it/foto/una-deliziosa-e-gustosa-pizza-italiana-margherita-con-pomodori-e-mozzarella-di-bufala.jpg?s=612x612&w=0&k=20&c=NTxFTkkUXQu13aoDy8vW9SK27GsqOufOPNWpjycCmok=',
                 'price' => 10.50,
                 'ingredients' => 'Pizza dough, pomodoro, mozzarella, basilico',
                 'visibility' => true,
@@ -622,7 +622,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Pizza Quattro Stagioni',
-                'img_url' => 'https://example.com/pizza_quattro_stagioni.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/675077466/it/foto/pizza-quattro-stagioni-con-prosciutto-e-carciofi.jpg?s=612x612&w=0&k=20&c=spwQ93Prksh_Aw20GBv5TqPeER5RscAugpJE_ZGCnpc=',
                 'price' => 11.99,
                 'ingredients' => 'Pizza dough, pomodoro, mozzarella, funghi, prosciutto cotto, carciofini, olive nere, origano',
                 'visibility' => true,
@@ -631,7 +631,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Pizza Diavola',
-                'img_url' => 'https://example.com/pizza_diavola.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/177375131/it/foto/pizza-diavola-con-salamy.jpg?s=612x612&w=0&k=20&c=OvP21qLk3pmBSO1_3CuUtdsV0ptxtj38eQe3kzgstQA=',
                 'price' => 10.75,
                 'ingredients' => 'Pizza dough, pomodoro, mozzarella, salame piccante, peperoncini, peperoni, olio d\'oliva',
                 'visibility' => true,
@@ -640,7 +640,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Pizza Capricciosa',
-                'img_url' => 'https://example.com/pizza_capricciosa.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/1456338919/it/foto/pizza-tradizionale-capricciosa-pronta-da-mangiare-poster-per-ristorante.jpg?s=612x612&w=0&k=20&c=TL9JNZLPk9O4s32YYlgyHZU2RZGHoAjJ2IGK-TAPM8E=',
                 'price' => 12.50,
                 'ingredients' => 'Pizza dough, pomodoro, mozzarella, prosciutto cotto, funghi, carciofini, olive nere, origano',
                 'visibility' => true,
@@ -649,7 +649,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Pizza Frutti di Mare',
-                'img_url' => 'https://example.com/pizza_frutti_di_mare.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/1199274556/it/foto/pizza-italiana-a-base-di-pesce-con-calamari-cozze-e-gamberetti.jpg?s=612x612&w=0&k=20&c=-KEyvshv---npV5AxmFJh6k-5Koen4BbbX2KV5wzeGQ=',
                 'price' => 13.99,
                 'ingredients' => 'Pizza dough, pomodoro, mozzarella, frutti di mare (calamari, gamberetti, cozze, vongole), aglio, prezzemolo',
                 'visibility' => true,
@@ -658,7 +658,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Risotto ai Funghi Porcini',
-                'img_url' => 'https://example.com/risotto_funghi.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/636781990/it/foto/risotto-con-funghi-porcini-e-primo-tempo-timo-orizzontale.jpg?s=612x612&w=0&k=20&c=pqWrTtgZCXSkfqG5Nen8j31ZosCySv0u6Lxj3H1eqI8=',
                 'price' => 14.75,
                 'ingredients' => 'Riso Carnaroli, funghi porcini, cipolla, brodo di carne, prezzemolo',
                 'visibility' => true,
@@ -667,7 +667,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Lasagne alla Bolognese',
-                'img_url' => 'https://example.com/lasagne_bolognese.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/535851351/it/foto/lasagne-su-un-piatto-quadrato-bianco.jpg?s=612x612&w=0&k=20&c=QyjunsfRaaFLR8qb7p2jSEjEJsdx0zdPjMsk3Nb4huE=',
                 'price' => 16.99,
                 'ingredients' => 'Fogli di pasta all\'uovo, ragù alla bolognese, besciamella, parmigiano reggiano',
                 'visibility' => true,
@@ -676,7 +676,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Filetto di Manzo al Pepe Verde',
-                'img_url' => 'https://example.com/filetto_di_manzo_pepe_verde.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/640113486/it/foto/bistecca-di-controfiletto-rara-media-con-salsa-chimichurri.jpg?s=612x612&w=0&k=20&c=N_OqhzmFbyO-9NX-GpG7EW9Z3EtKGP-HjZLKxTwdmTs=',
                 'price' => 19.99,
                 'ingredients' => 'Filetto di manzo, pepe verde, burro, panna, brandy, sale, pepe',
                 'visibility' => true,
@@ -685,7 +685,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Saltimbocca alla Romana',
-                'img_url' => 'https://example.com/saltimbocca_alla_romana.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/636069746/it/foto/saline-di-manzo-con-salvia-e-prosciutto-da-vicino-orizzontale.jpg?s=612x612&w=0&k=20&c=HBM7qp2xNa2MEM_9iq_tuAk5OMeBlJgiUnIsA3m3dp0=',
                 'price' => 16.50,
                 'ingredients' => 'Fettine di vitello, prosciutto crudo, salvia, burro, vino bianco secco, sale, pepe',
                 'visibility' => true,
@@ -694,7 +694,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Ossobuco alla Milanese',
-                'img_url' => 'https://example.com/ossobuco_milanese.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/541298852/it/foto/ossobuco.jpg?s=612x612&w=0&k=20&c=TLTLKDEqIFDtupq89uMEF7jhvHuZ6SP1YEN8_izY2ho=',
                 'price' => 22.50,
                 'ingredients' => 'Fette di ossobuco, vino bianco, brodo di carne, cipolla, sedano, carota, prezzemolo',
                 'visibility' => true,
@@ -713,7 +713,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Ravioli al Tartufo',
-                'img_url' => 'https://example.com/ravioli_tartufo.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/1144972017/it/foto/piatto-di-deliziosa-pasta-italiana-con-chips-di-funghi-al-tartufo-sul-tavolo-in-ristorante-di.jpg?s=612x612&w=0&k=20&c=ePDPswQxAXXyHVZVlzun0xOGD3ILDbr8Qt6yTtLNmfk=',
                 'price' => 18.50,
                 'ingredients' => 'Ravioli ripieni di ricotta e spinaci, burro, tartufo nero',
                 'visibility' => true,
@@ -722,7 +722,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Bruschetta al Pomodoro',
-                'img_url' => 'https://example.com/bruschetta_pomodoro.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/1194656666/it/foto/bruschetta-italiana.jpg?s=612x612&w=0&k=20&c=RalUBEQs1QWO6Bl3r0hrkWh-AUlAENWBEL12_Qiy6t0=',
                 'price' => 7.25,
                 'ingredients' => 'Pane casereccio, pomodori maturi, aglio, basilico, olio d\'oliva',
                 'visibility' => true,
@@ -731,7 +731,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Saltimbocca alla Romana',
-                'img_url' => 'https://example.com/saltimbocca_romana.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/636069680/it/foto/manzo-italiano-saltimbocca-con-salvia-prosciutto-e-limone-primo-up.jpg?s=612x612&w=0&k=20&c=b-o8tOszZQX-U233rNOUHHZuhdXsWmbPSnVJYa0EYDo=',
                 'price' => 20.75,
                 'ingredients' => 'Fette di vitello, prosciutto crudo, salvia, vino bianco, burro',
                 'visibility' => true,
@@ -740,7 +740,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Caprese Salad',
-                'img_url' => 'https://example.com/caprese_salad.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/1173160734/it/foto/pomodoro-basilico-mozzarella-insalata-caprese-con-aceto-balsamico-e-olio-doliva.jpg?s=612x612&w=0&k=20&c=FiHV754V6q0Gm9NbYXHqZ3wkssl821X88dOI2Tat_Rw=',
                 'price' => 9.50,
                 'ingredients' => 'Pomodori maturi, mozzarella di bufala, basilico, olio d\'oliva, sale, pepe',
                 'visibility' => true,
@@ -749,7 +749,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Gnocchi al Gorgonzola',
-                'img_url' => 'https://example.com/gnocchi_gorgonzola.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/823934736/it/foto/piatto-di-pasta-italiana.jpg?s=612x612&w=0&k=20&c=YGiTi5LNMJRzCBb6jlv1b1QEwGVNzcjLfXpRf2NeGIs=',
                 'price' => 15.99,
                 'ingredients' => 'Gnocchi di patate, gorgonzola, panna, noci',
                 'visibility' => true,
@@ -758,7 +758,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Tortellini in Brodo',
-                'img_url' => 'https://example.com/tortellini_brodo.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/174861713/it/foto/tortellini-in-brodo-ristretto.jpg?s=612x612&w=0&k=20&c=DE7cTvwbaD6JERtBWWtP7Vc_ydIBIGHM5dD_DzoFX1k=',
                 'price' => 12.25,
                 'ingredients' => 'Tortellini di carne, brodo di pollo, prezzemolo',
                 'visibility' => true,
