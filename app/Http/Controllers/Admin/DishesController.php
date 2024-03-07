@@ -5,16 +5,28 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Dish;
-
+use App\Models\Restaurant;
+use Illuminate\Support\Facades\Auth;
 
 class DishesController extends Controller
 {
+    private $rules = [ 
+        'name' => ['required', 'string', 'min:3', 'max:40'],
+        'img_url' => ['required', 'url', 'image'],
+        'price' => ['required', 'decimal:10', 'max:10'],
+        'ingredients' => ['required', 'string'],
+        'visibility' => ['required', 'boolean'],
+        'description' => ['required', 'string'],
+        'restaurant_id' => ['required', 'exists:restaurants,id'],
+        
+    ];
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $dishes = Dish::all();
+        $id = Restaurant::where('id', Auth::id())->pluck('id')->first();
+        $dishes = Dish::where('restaurant_id', $id)->get();
         return view('admin.dishes.index', compact('dishes'));
     }
 
@@ -32,7 +44,11 @@ class DishesController extends Controller
      */
     public function store(Request $request)
     {
-        $newDish = Dish::create($request->all());
+        
+        $data = $request->validate($this->rules);
+        $data['restaurant_id'] = Restaurant::where('id', Auth::id())->pluck('id')->first();
+        
+        $newDish = Dish::create($data);
         return redirect()->route('admin.dishes.show', $newDish);
     }
 
@@ -49,6 +65,7 @@ class DishesController extends Controller
      */
     public function edit(Dish $dish)
     {
+        
         return view('admin.dishes.edit', compact('dish'));
     }
 
@@ -57,7 +74,8 @@ class DishesController extends Controller
      */
     public function update(Request $request, Dish $dish)
     {
-        $dish->update($request->all());
+        $data = $request->validate($this->rules);
+        $dish->update($data);
         return redirect()->route('admin.dishes.show', $dish);
     }
 

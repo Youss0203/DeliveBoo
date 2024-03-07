@@ -7,7 +7,7 @@
     <div class="row">
         <div class="col-12 p-2 mb-3 text-center">
             <h2>
-                Questi sono i progetti presenti {{ Auth::user()->name }}!
+                Questi sono i tuoi piatti presenti {{ Auth::user()->name }}!
             </h2>
         </div>
         <div class="col-12">

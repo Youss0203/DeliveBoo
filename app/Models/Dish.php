@@ -16,6 +16,7 @@ class Dish extends Model
         'description',
         'img_url',
         'visibility',
+        'restaurant_id',
 
     ];
 
