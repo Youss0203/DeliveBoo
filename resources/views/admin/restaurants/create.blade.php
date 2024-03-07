@@ -11,7 +11,7 @@
     <div class="col-12">
 
 
-        <form action="{{ route('admin.restaurants.store') }}" method="POST">
+        <form action="{{ route('admin.restaurants.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
 
             <div class="mb-3">

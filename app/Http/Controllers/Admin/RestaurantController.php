@@ -7,12 +7,20 @@ use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Models\Restaurant;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class RestaurantController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+    public $rules = [
+
+        'company_name' => ['required', 'min:3', 'string', 'max:50'],
+        'addres' => ['required', 'min:3', 'max:60'],
+        'vat_no' => ['required', 'integer', 'min:8', 'max:10'],
+        'img_url' => ['required', 'url|image'],
+        
+    ];
+    
+    
     public function index()
     {
         $restaurants = Restaurant::all();
@@ -33,8 +41,12 @@ class RestaurantController extends Controller
     /**
      * Store a newly created resource in storage.
      */
+
+
+     
     public function store(Request $request)
     {
+        
        
         $data = $request->all();
         $data['user_id'] = Auth::id();
@@ -44,13 +56,11 @@ class RestaurantController extends Controller
 
         
 
-        // store -> 
-        // $imageSrc = Storage::put('uploads/posts', $data['post_image']);
-        // $data['post_image'] = $imageSrc;
 
-        // update -> 
-        // $imageSrc = Storage::put('uploads/posts', $data['post_image']);
-        // $data['post_image'] = $imageSrc;
+        $imageSrc = Storage::put('uploads/restaurants', $data['img_url']);
+        $data['img_url'] = $imageSrc;
+
+       
     }
 
     /**
@@ -74,7 +84,8 @@ class RestaurantController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $imageSrc = Storage::put('uploads/restaurants', $data['img_url']);
+        $data['img_url'] = $imageSrc;    
     }
 
     /**
