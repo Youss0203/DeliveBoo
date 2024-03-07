@@ -14,9 +14,12 @@ class RestaurantController extends Controller
     public $rules = [
 
         'company_name' => ['required', 'min:3', 'string', 'max:50'],
-        'addres' => ['required', 'min:3', 'max:60'],
-        'vat_no' => ['required', 'integer', 'min:8', 'max:10'],
-        'img_url' => ['required', 'url|image'],
+        'address' => ['required', 'min:3', 'max:60'],
+        'vat_no' => ['required', 'integer'],
+        'img_url' => ['required', 'image'],
+        'categories' => ['array'],
+
+
         
     ];
     
@@ -46,20 +49,23 @@ class RestaurantController extends Controller
      
     public function store(Request $request)
     {
-        
+        // dd($request->all());
        
-        $data = $request->all();
+        $data = $request->validate($this->rules);
+
         $data['user_id'] = Auth::id();
+
+        $imageSrc = Storage::put('uploads/restaurants', $data['img_url']);
+        $data['img_url'] = $imageSrc;
+
         $newRestaurant = Restaurant::create($data);
 
         $newRestaurant->categories()->sync($data['categories']);
 
         
+        return view('admin.dashboard');
 
-
-        $imageSrc = Storage::put('uploads/restaurants', $data['img_url']);
-        $data['img_url'] = $imageSrc;
-
+       
        
     }
 
@@ -82,10 +88,18 @@ class RestaurantController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Restaurant $restaurant)
     {
+
+        $data = $request->validate($this->rules);
+
         $imageSrc = Storage::put('uploads/restaurants', $data['img_url']);
-        $data['img_url'] = $imageSrc;    
+        $data['img_url'] = $imageSrc;   
+        
+        $restaurant->update($data);
+
+        return redirect()->route('admin.dishes.show', $restaurant->dishes);
+
     }
 
     /**

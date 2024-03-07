@@ -9,6 +9,8 @@
             <h2 class="text-center">
                 Welcome back, {{ Auth::user()->name }}
             </h2>
+
+            
         </div>
     </div>
 </div>
