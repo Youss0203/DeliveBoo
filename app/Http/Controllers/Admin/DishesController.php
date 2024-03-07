@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Dish;
+
 
 class DishesController extends Controller
 {
@@ -12,7 +14,8 @@ class DishesController extends Controller
      */
     public function index()
     {
-        //
+        $dishes = Dish::all();
+        return view('admin.dishes.index', compact('dishes'));
     }
 
     /**
@@ -20,7 +23,8 @@ class DishesController extends Controller
      */
     public function create()
     {
-        //
+        $dish = new Dish();
+        return view('admin.dishes.create', compact('dish'));
     }
 
     /**
@@ -28,38 +32,41 @@ class DishesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $newDish = Dish::create($request->all());
+        return redirect()->route('admin.dishes.show', $newDish);
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Dish $dish)
     {
-        //
+        return view('admin.dishes.show', compact('dish'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Dish $dish)
     {
-        //
+        return view('admin.dishes.edit', compact('dish'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Dish $dish)
     {
-        //
+        $dish->update($request->all());
+        return redirect()->route('admin.dishes.show', $dish);
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Dish $dish)
     {
-        //
+        $dish->delete();
+        return redirect()->route('admin.dishes.index');
     }
 }
