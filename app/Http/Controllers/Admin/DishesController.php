@@ -64,7 +64,9 @@ class DishesController extends Controller
     public function show(Dish $dish)
     {
 
-        
+        if ($dish->restaurant_id !=  Restaurant::where('id', Auth::id())->pluck('id')->first()) {
+            return to_route('admin.dishes.index')->with('Messaggio', 'Non ci sono piatti da visualizzare.');
+        }
         return view('admin.dishes.show', compact('dish'));
 
 
@@ -75,8 +77,10 @@ class DishesController extends Controller
      */
     public function edit(Dish $dish)
     {
-        
-        return view('admin.dishes.edit', compact('dish'));
+        if ($dish->restaurant_id !=  Restaurant::where('id', Auth::id())->pluck('id')->first()) {
+            return to_route('admin.dishes.index')->with('Messaggio', 'Non ci sono piatti da visualizzare.');
+        }
+        return view('admin.dishes.show', compact('dish'));
     }
 
     /**
