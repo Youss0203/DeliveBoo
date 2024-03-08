@@ -20,10 +20,10 @@ class RestaurantController extends Controller
         'categories' => ['array'],
 
 
-        
+
     ];
-    
-    
+
+
     public function index()
     {
         $restaurants = Restaurant::all();
@@ -46,11 +46,11 @@ class RestaurantController extends Controller
      */
 
 
-     
+
     public function store(Request $request)
     {
         // dd($request->all());
-       
+
         $data = $request->validate($this->rules);
 
         $data['user_id'] = Auth::id();
@@ -62,11 +62,8 @@ class RestaurantController extends Controller
 
         $newRestaurant->categories()->sync($data['categories']);
 
-        
-        return view('admin.dashboard');
 
-       
-       
+        return view('admin.dashboard');
     }
 
     /**
@@ -94,12 +91,11 @@ class RestaurantController extends Controller
         $data = $request->validate($this->rules);
 
         $imageSrc = Storage::put('uploads/restaurants', $data['img_url']);
-        $data['img_url'] = $imageSrc;   
-        
+        $data['img_url'] = $imageSrc;
+
         $restaurant->update($data);
 
         return redirect()->route('admin.dishes.show', $restaurant->dishes);
-
     }
 
     /**
