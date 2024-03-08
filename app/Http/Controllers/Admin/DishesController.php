@@ -8,12 +8,14 @@ use App\Models\Dish;
 use App\Models\Restaurant;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Validation\Rules\File;
+use Illuminate\Validation\Rule;
 
 class DishesController extends Controller
 {
     private $rules = [ 
         'name' => ['required', 'string', 'min:3', 'max:40'],
-        'img_url' => ['required', 'image',],
+        'img_url' => ['required', 'image' ],
         'price' => ['required', 'decimal:2',],
         'ingredients' => ['required', 'string'],
         'description' => ['required', 'string'],

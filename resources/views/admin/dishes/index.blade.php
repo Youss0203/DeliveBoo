@@ -12,25 +12,23 @@
         </div>
         <!--ciaoooooo1-->
         <div class="col-12">
-            <table class="table table-striped table-hover">
+            <table class="table table-hover ">
                 <thead>
                     <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Ingredients</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Description</th>
-                        <th scope="col">Image</th>
-                        <th scope="col">Actions</th>
+                        
+                        <th scope="col">Nome</th>
+                        <th scope="col">Ingredienti</th>
+                        <th scope="col">Prezzo</th>
+                        <th scope="col">Descrizione</th>
+                        <th scope="col">Immagini</th>
+                        <th scope="col">Azioni</th>
 
                     </tr>
                 </thead>
                 <tbody>
                     @forelse ( $dishes as $dish )
                         <tr>
-                            <th scope="row">
-                                {{ $dish->id }}
-                            </th>
+                            
                             <td>
                                 <a href="{{ route('admin.dishes.show', $dish) }}">
                                     {{ $dish->name }}
@@ -40,7 +38,7 @@
                                 {{ $dish->ingredients }}
                             </td>
                             <td>
-                                {{ $dish->price }}
+                                {{ $dish->price }} €
                             </td>
                             <td>
                                 {{ $dish->description }}
@@ -54,21 +52,21 @@
                                     @endif
                                 </div>
                             </td>
-                            <td class="d-flex p-3">
+                            <td class="d-flex  p-3">
                                 <a href="{{ route('admin.dishes.show', $dish) }}">
                                     <button class="btn btn-sm btn-info ">
-                                        View
+                                        Mostra
                                     </button>
                                 </a>
                                 <a href="{{ route('admin.dishes.edit', $dish) }}">
                                     <button class="btn btn-sm btn-success mx-1">
-                                        Edit
+                                        Edita
                                     </button>
                                 </a>
                                
                                  <!-- Button trigger modal --> 
                                  <button type="button" class="btn btn-warning btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal-{{ $dish->id }}">
-                                    Delete
+                                    Cancella
                                 </button>
 
                                 <!-- Modal -->
@@ -76,11 +74,11 @@
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                            <h1 class="modal-title fs-5 text-danger" id="exampleModalLabel">Deleting post...</h1>
+                                            <h1 class="modal-title fs-5 text-danger" id="exampleModalLabel">Attenzione...</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
-                                                Do you really want to delete {{ $dish->name }}?
+                                                Vuoi veramente cancellare {{ $dish->name }}?
                                             </div>
                                             <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -90,7 +88,7 @@
                                                 @method('DELETE')
 
                                                 <button class="btn btn-danger" type="submit">
-                                                    Delete
+                                                    Cancella
                                                 </button>
                                             </form>
                                             </div>
@@ -101,8 +99,8 @@
                         </tr>
                     @empty
                         <tr>
-                            <td colspan="4">
-                                There are no posts available
+                            <td colspan="6">
+                                Non ci sono piatti
                             </td>
                         </tr>
                     @endforelse
