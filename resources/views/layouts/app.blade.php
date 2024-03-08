@@ -54,10 +54,10 @@
                             @endif
 
                             @else
-{{-- 
-                            <li class="nav-item dropdown">
+ 
+                            {{--<li class="nav-item dropdown">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('admin.projects.index') }}">Progetti</a>
+                                <a class="nav-link" href="{{ route('admin.dashboard') }}">Vai alla tua dashboard</a>
                             </li>
 
                             <li class="nav-item">

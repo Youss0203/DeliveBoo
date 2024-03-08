@@ -38,7 +38,7 @@ Route::middleware('auth')
 
         Route::resource('/restaurants', AdminRestaurantController::class);
         Route::resource('/dishes', AdminDishesController::class);
-        // Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('dashboard');
+        Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('dashboard');
         // Route::get('/projects/deleted', [AdminProjectController::class, 'deletedIndex'])->name('projects.deleted.index');
         // Route::get('/projects/deleted/{project}', [AdminProjectController::class, 'deletedShow'])->name('projects.deleted.show');
         // Route::patch('/projects/deleted/{project}', [AdminProjectController::class, 'deletedRestore'])->name('projects.deleted.restore');
