@@ -48,10 +48,10 @@
                             <td>
                                 <div width="10">
                                     @if ( str_starts_with($dish->img_url, 'http'))
-                <img class="img-fluid" src="{{ $dish->img_url }}" alt="">
-            @else
-                <img src="{{ asset('storage') . '/' . $dish->img_url }}" alt="">
-            @endif
+                                        <img class="img-fluid" src="{{ $dish->img_url }}" alt="">
+                                    @else
+                                        <img src="{{ asset('storage') . '/' . $dish->img_url }}" alt="">
+                                    @endif
                                 </div>
                             </td>
                             <td class="d-flex p-3">
@@ -65,40 +65,36 @@
                                         Edit
                                     </button>
                                 </a>
-                                <a href="{{ route('admin.dishes.create', $dish) }}">
-                                    <button class="btn btn-sm btn-primary">
-                                        Create
-                                    </button>
-                                </a> 
+                               
                                  <!-- Button trigger modal --> 
                                  <button type="button" class="btn btn-warning btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal-{{ $dish->id }}">
                                     Delete
                                 </button>
 
                                 <!-- Modal -->
-                                 <div class="modal fade" id="exampleModal-{{ $dish->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal fade" id="exampleModal-{{ $dish->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                        <h1 class="modal-title fs-5 text-danger" id="exampleModalLabel">Deleting post...</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            Do you really want to delete {{ $dish->name }}?
-                                        </div>
-                                        <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h1 class="modal-title fs-5 text-danger" id="exampleModalLabel">Deleting post...</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Do you really want to delete {{ $dish->name }}?
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
-                                        <form class="d-inline-block" action="{{ route('admin.dishes.destroy', $dish) }}" method="POST">
-                                            @csrf
-                                            @method('DELETE')
+                                            <form class="d-inline-block" action="{{ route('admin.dishes.destroy', $dish) }}" method="POST">
+                                                @csrf
+                                                @method('DELETE')
 
-                                            <button class="btn btn-danger" type="submit">
-                                                Delete
-                                            </button>
-                                        </form>
+                                                <button class="btn btn-danger" type="submit">
+                                                    Delete
+                                                </button>
+                                            </form>
+                                            </div>
                                         </div>
-                                    </div>
                                     </div>
                                 </div>
                             </td>
@@ -113,6 +109,16 @@
 
                 </tbody>
             </table>
+
+            <div class="col-6">
+              
+                <a href="{{ route('admin.dishes.create') }}">
+                    <button class="btn btn-primary">
+                        Aggiungi Piatto
+                    </button>
+                </a>
+               
+            </div>
         </div>
     </div>
 </div>
