@@ -95,7 +95,7 @@ class OrderSeeder extends Seeder
                 'customer_name' => 'Matteo',
                 'customer_lastname' => 'Marchetti',
                 'customer_address' => 'Via Monti 9',
-                'customer_phone' => 3661122334,
+                'customer_phone' => 3661122300,
                 'total_amount' => 22.99,
             ],
             [
@@ -109,7 +109,7 @@ class OrderSeeder extends Seeder
                 'customer_name' => 'Roberto',
                 'customer_lastname' => 'Conti',
                 'customer_address' => 'Via della Spiga 7',
-                'customer_phone' => 3661122334,
+                'customer_phone' => 3661128884,
                 'total_amount' => 28.75,
             ],
             [
@@ -137,7 +137,7 @@ class OrderSeeder extends Seeder
                 'customer_name' => 'Federico',
                 'customer_lastname' => 'Vitali',
                 'customer_address' => 'Corso Monforte 16',
-                'customer_phone' => 3669988776,
+                'customer_phone' => 3664729222,
                 'total_amount' => 27.50,
             ],
             [
@@ -173,6 +173,5 @@ class OrderSeeder extends Seeder
             $newOrder->total_amount = $order['total_amount'];
             $newOrder->save();
         }
-
     }
 }
