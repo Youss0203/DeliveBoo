@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Http\Controllers\Api;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use App\Models\Restaurant;
+
+class RestaurantController extends Controller
+{
+    public function index(Request $request) {  //Restituisce le risorse associate
+        if($request->has('category')){
+            $categories = explode(" ", $request['category']);
+            $restaurants = Restaurant::whereHas('categories', function ($q) use ($categories) {
+                $q->whereIn('category_id', $categories);
+            })->get();
+        }else{
+            $restaurants = Restaurant::all();
+        }
+        return response()->json([
+            "success" => true,
+            "results" => $restaurants
+        ]);
+    }
+}
+
