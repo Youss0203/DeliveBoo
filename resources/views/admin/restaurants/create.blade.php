@@ -61,7 +61,7 @@
                             <input class="form-check-input" type="checkbox" name="categories[]" id="categories-{{ $category->id }}" value="{{ $category->id }}"
                             {{ in_array( $category->id, old('categories', $restaurants->categories->pluck('id')->toArray())) ? 'checked' : '' }}>
                             <label for="categories-{{ $category->id }}">
-                                {{ $category->category }}
+                                {{ $category->name }}
                             </label>
                             
                         @endforeach
