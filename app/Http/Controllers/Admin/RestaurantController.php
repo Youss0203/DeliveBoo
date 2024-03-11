@@ -63,7 +63,7 @@ class RestaurantController extends Controller
         $newRestaurant->categories()->sync($data['categories']);
 
 
-        return view('admin.dashboard');
+        return to_route('admin.dashboard');
     }
 
     /**
