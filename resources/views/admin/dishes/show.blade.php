@@ -23,7 +23,7 @@
                 {{ $dish->price }} €
             </p>
             <p>
-                {{ $dish->desription }}
+                {{ $dish->description }}
             </p>
             <div class="p-5">
 

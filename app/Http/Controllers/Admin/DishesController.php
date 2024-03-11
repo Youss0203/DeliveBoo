@@ -13,13 +13,13 @@ use Illuminate\Validation\Rule;
 
 class DishesController extends Controller
 {
-    private $rules = [ 
+    private $rules = [
         'name' => ['required', 'string', 'min:3', 'max:40'],
-        'img_url' => ['required', 'image' ],
+        'img_url' => ['required', 'image'],
         'price' => ['required', 'decimal:2',],
         'ingredients' => ['required', 'string'],
         'description' => ['required', 'string'],
-        
+
     ];
     /**
      * Display a listing of the resource.
@@ -38,7 +38,6 @@ class DishesController extends Controller
     {
         $dish = new Dish();
         return view('admin.dishes.create', compact('dish'));
-
     }
 
     /**
@@ -46,18 +45,16 @@ class DishesController extends Controller
      */
     public function store(Request $request)
     {
-        
+
         $data = $request->validate($this->rules);
         $data['visibility'] = isset($data['visibility']);
         $data['restaurant_id'] = Restaurant::where('id', Auth::id())->pluck('id')->first();
-        
+
         $imageSrc = Storage::put('uploads/dishes', $data['img_url']);
         $data['img_url'] = $imageSrc;
 
         $newDish = Dish::create($data);
         return redirect()->route('admin.dishes.show', $newDish);
-
-        
     }
 
     /**
@@ -70,8 +67,6 @@ class DishesController extends Controller
             return to_route('admin.dishes.index')->with('Messaggio', 'Non ci sono piatti da visualizzare.');
         }
         return view('admin.dishes.show', compact('dish'));
-
-
     }
 
     /**
@@ -82,7 +77,7 @@ class DishesController extends Controller
         if ($dish->restaurant_id !=  Restaurant::where('id', Auth::id())->pluck('id')->first()) {
             return to_route('admin.dishes.index')->with('Messaggio', 'Non ci sono piatti da visualizzare.');
         }
-        return view('admin.dishes.show', compact('dish'));
+        return view('admin.dishes.edit', compact('dish'));
     }
 
     /**
@@ -94,10 +89,10 @@ class DishesController extends Controller
         $data['visibility'] = isset($data['visibility']);
 
         $imageSrc = Storage::put('uploads/dishes', $data['img_url']);
-        $data['img_url'] = $imageSrc; 
+        $data['img_url'] = $imageSrc;
 
         $dish->update($data);
-        
+
         return redirect()->route('admin.dishes.show', $dish);
     }
 

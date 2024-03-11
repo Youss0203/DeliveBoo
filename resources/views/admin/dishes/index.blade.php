@@ -10,25 +10,22 @@
                 Questi sono i tuoi piatti presenti {{ Auth::user()->name }}!
             </h2>
         </div>
-        <!--ciaoooooo1-->
+        <!-- table row -->
         <div class="col-12">
             <table class="table table-hover ">
                 <thead>
                     <tr>
-                        
                         <th scope="col">Nome</th>
                         <th scope="col">Ingredienti</th>
                         <th scope="col">Prezzo</th>
                         <th scope="col">Descrizione</th>
                         <th scope="col">Immagini</th>
                         <th scope="col">Azioni</th>
-
                     </tr>
                 </thead>
                 <tbody>
                     @forelse ( $dishes as $dish )
                         <tr>
-                            
                             <td>
                                 <a href="{{ route('admin.dishes.show', $dish) }}">
                                     {{ $dish->name }}
@@ -52,20 +49,20 @@
                                     @endif
                                 </div>
                             </td>
-                            <td class="d-flex  p-3">
+                            <td class="">
                                 <a href="{{ route('admin.dishes.show', $dish) }}">
-                                    <button class="btn btn-sm btn-info ">
+                                    <button class="btn btn-sm btn-info" style="min-width: 4rem;">
                                         Mostra
                                     </button>
                                 </a>
                                 <a href="{{ route('admin.dishes.edit', $dish) }}">
-                                    <button class="btn btn-sm btn-success mx-1">
+                                    <button class="btn btn-sm btn-success mx-1" style="min-width: 4rem;">
                                         Edita
                                     </button>
                                 </a>
                                
                                  <!-- Button trigger modal --> 
-                                 <button type="button" class="btn btn-warning btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal-{{ $dish->id }}">
+                                 <button type="button" class="btn btn-warning btn-sm mx-1 custom_button" style="min-width: 4rem;" data-bs-toggle="modal" data-bs-target="#exampleModal-{{ $dish->id }}">
                                     Cancella
                                 </button>
 
@@ -109,13 +106,11 @@
             </table>
 
             <div class="col-6">
-              
                 <a href="{{ route('admin.dishes.create') }}">
                     <button class="btn btn-primary">
                         Aggiungi Piatto
                     </button>
                 </a>
-               
             </div>
         </div>
     </div>
