@@ -30,8 +30,7 @@
                 <label for="name_project" class="input-group-text">Nome piatto :</label>
                 <input class="form-control" type="text" name="name" id="name" value="{{ old('name') }}">
             </div>
-
-
+            
             {{-- <div class="mb-3 input-group">
                 <label for="type_id" class="input-group-text">Tipo:</label>
                 <select class="form-select" type="text" name="restaurant_id" id="restaurant_id" >
@@ -43,15 +42,6 @@
                     @endforeach
                 </select>
             </div> --}}
-
-
-
-
-
-
-
-
-
 
             <div class="mb-3 input-group">
                 <label for="author" class="input-group-text">Ingredienti :</label>
