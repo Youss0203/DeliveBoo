@@ -10,7 +10,7 @@
                 Questi sono i tuoi piatti presenti {{ Auth::user()->name }}!
             </h2>
         </div>
-        <!--ciaoooooo1-->
+        <!-- table row -->
         <div class="col-12">
             <table class="table table-hover ">
                 <thead>
@@ -26,7 +26,6 @@
                 <tbody>
                     @forelse ( $dishes as $dish )
                         <tr>
-                            
                             <td>
                                 <a href="{{ route('admin.dishes.show', $dish) }}">
                                     {{ $dish->name }}
@@ -107,13 +106,11 @@
             </table>
 
             <div class="col-6">
-              
                 <a href="{{ route('admin.dishes.create') }}">
                     <button class="btn btn-primary">
                         Aggiungi Piatto
                     </button>
                 </a>
-               
             </div>
         </div>
     </div>

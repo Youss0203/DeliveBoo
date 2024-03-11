@@ -89,7 +89,6 @@ class RestaurantSeeder extends Seeder
                 'img_url' => 'https://media.istockphoto.com/id/1344930008/it/foto/ristorante-a-pyongyang-corea-del-nord.jpg?s=612x612&w=0&k=20&c=IGQNuu5f1ySVF8hko-RVyDDijusaGo1H8cPq7yP1DqI=',
                 'user_id' => 10,
             ],
-
             [
                 'company_name' => 'Buk Chang Dong',
                 'address' => 'Via Paolo Sarpi, 15 - Milano',
@@ -141,7 +140,6 @@ class RestaurantSeeder extends Seeder
                 'img_url' => 'https://media.istockphoto.com/id/1312094858/it/foto/barbecue-nel-ristorante-di-mercado-del-puerto-a-montevideo-uruguay.jpg?s=1024x1024&w=is&k=20&c=ENibQuhFWiazxjT5v3qiLlZV0msKqHY8eZ1YzRsya5E=',
                 'user_id' => 17,
             ],
-
             [
                 'company_name' => 'The Rusty Fork',
                 'address' => 'Via Chiaravalle, 35 - Milano',
