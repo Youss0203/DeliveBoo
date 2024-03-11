@@ -6,28 +6,43 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <div class="d-flex justify-content-between align-items-center">
-            <div class="card" style="width: 50rem;">
-                <img src="{{ $restaurant->img_url}}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h1>{{ $restaurant->company_name }}</h1>
-                  <p class="card-text">{{ $restaurant->address }}</p>
+            <div>
+              <section class="col-10 offset-1">
+                <div class="card" style="width: 100%;">
+                    <img src="{{ $restaurant->img_url}}" class="card-img-top" alt="...">
+                    <div class="card-body d-flex align-items-center flex-column mb-3">
+                        <h1 class="mb-3">{{ $restaurant->company_name }}</h1>
+                        <p class="card-text">{{ $restaurant->address }}</p>
+                    </div>
+                    <div class="d-flex justify-content-center mb-4">
+                        <a class="pe-5" href="{{ route('admin.dishes.create') }}">
+                            <button class="btn btn-success">
+                                Aggiungi Piatto
+                            </button>
+                        </a>
+                        <a href="{{ route('admin.dishes.index') }}">
+                            <button class="btn btn-info">
+                                Vedi i tuoi piatti
+                            </button>
+                        </a>
+                    </div>
                 </div>
-              </div>
+              </section>
             
-
-              <div>
-                <a class="px-5" href="{{ route('admin.dishes.create') }}">
-                    <button class="btn btn-primary">
-                        Aggiungi Piatto
-                    </button>
-                </a>
-                <a href="{{ route('admin.dishes.index') }}">
-                    <button class="btn btn-primary">
-                        Vedi i tuoi piatti
-                    </button>
-                </a>
-            </div>
+              {{-- <section class="col-xs-12 col-md-4">
+                <div class="d-flex justify-content-center">
+                    <a class="px-5 mb-2" href="{{ route('admin.dishes.create') }}">
+                        <button class="btn btn-primary" style="width: 8rem">
+                            Aggiungi Piatto
+                        </button>
+                    </a>
+                    <a href="{{ route('admin.dishes.index') }}">
+                        <button class="btn btn-primary" style="width: 8rem">
+                            Vedi i tuoi piatti
+                        </button>
+                    </a>
+                </div>
+              </section> --}}
             </div>
         </div>
     </div>
