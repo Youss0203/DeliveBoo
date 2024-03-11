@@ -10,7 +10,7 @@ class RestaurantController extends Controller
 {
     public function index(Request $request) {  //Restituisce le risorse associate
         if($request->has('category')){
-            $categories = explode(" ", $request['category']);
+            $categories = $request['category'];
             $restaurants = Restaurant::whereHas('categories', function ($q) use ($categories) {
                 $q->whereIn('category_id', $categories);
             })->get();
