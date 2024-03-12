@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\CategoriesController;
 use App\Http\Controllers\Api\RestaurantController;
+use App\Http\Controllers\Api\DishController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::apiResource('/categories', CategoriesController::class);
 Route::apiResource('/restaurants', RestaurantController::class);
+Route::apiResource('/dishes', DishController::class);
