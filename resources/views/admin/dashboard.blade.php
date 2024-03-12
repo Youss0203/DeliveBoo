@@ -9,7 +9,13 @@
             <div>
               <section class="col-10 offset-1">
                 <div class="card" style="width: 100%;">
-                    <img src="{{ $restaurant->img_url}}" class="card-img-top" alt="...">
+                    <div>
+                        @if ( str_starts_with($restaurant->img_url, 'http'))
+                            <img src="{{ $restaurant->img_url }}" alt="">
+                        @else
+                            <img src="{{ asset('storage') . '/' . $restaurant->img_url }}" alt="">
+                        @endif
+                    </div>
                     <div class="card-body d-flex align-items-center flex-column mb-3">
                         <h1 class="mb-3">{{ $restaurant->company_name }}</h1>
                         <p class="card-text">{{ $restaurant->address }}</p>

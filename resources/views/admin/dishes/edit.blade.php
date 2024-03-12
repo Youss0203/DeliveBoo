@@ -25,34 +25,34 @@
                 @method('PUT')
 
                 <div class="mb-3 input-group">
-                    <label for="title" class="input-group-text">Nome:</label>
+                    <label for="title" class="input-group-text">Nome * :</label>
                     <input class="form-control" type="text" name="name" id="name" value="{{ old('nome', $dish->name)}}">
                 </div>
 
                 <div class="mb-3 input-group">
-                    <label for="author" class="input-group-text">Ingredienti:</label>
+                    <label for="author" class="input-group-text">Ingredienti * :</label>
                     <input class="form-control" type="text" name="ingredients" id="ingredients" value="{{ old('ingredients', $dish->ingredients)}}">
                 </div>
 
                 <div class="mb-3 input-group">
-                    <label for="date" class="input-group-text">Prezzo:</label>
-                    <input class="form-control" type="number" name="price" id="price" value="{{ old('price', $dish->price)}}">
+                    <label for="date" class="input-group-text">Prezzo in (€) euro * :</label>
+                    <input class="form-control" type="text" name="price" id="price" value="{{ old('price', $dish->price)}}">
                 </div>
 
                 <div class="mb-3 input-group">
-                    <label for="post_image" class="input-group-text">Descrizione:</label>
+                    <label for="post_image" class="input-group-text">Descrizione * :</label>
                     <input class="form-control" type="text" name="description" id="description" value="{{ old('description', $dish->description)}}">
                 </div>
 
                 <div class="mb-3 input-group">
-                
+                    
                     <input class="form-control" type="file" name="img_url" id="img_url" value="{{ old('img_url') }}">
                 </div>
                 <div class="mb-3">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" name="visibility" id="visibility" @checked(old('visibility', $dish->visibility))>
                         <label class="form-check-label" for="visibility">
-                            Visibile
+                            Visibile *
                         </label>
                     </div>
                 </div>
