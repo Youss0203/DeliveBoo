@@ -212,7 +212,7 @@ class RestaurantSeeder extends Seeder
                 'company_name' => 'Spice of India',
                 'address' => 'Via Tortona, 32, 20144 Milano',
                 'vat_no' => 43219876,
-                'img_url' => 'url_immagine6.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/157533612/it/foto/palazzo-indiano.jpg?s=612x612&w=0&k=20&c=lzevgmDm4jWVXq6mm5moyxx1oy3gcO-kvDwEnAseTm0=',
                 'user_id' => 27,
             ],
             // ristoranti italiani
