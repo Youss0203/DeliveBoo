@@ -32,23 +32,23 @@
 
             <div class="mb-3">
                 <label for="company_name"class="form-label">
-                    Nome Ristorante
+                    Nome Ristorante * :
                 </label>
                 <input type="string" name="company_name" id="company_name" class="form-control">
             </div>
 
             <div class="mb-3">
-                <label for="description"class="form-label">Indirizzo:</label>
+                <label for="description"class="form-label">Indirizzo * :</label>
                 <input type="string" name="address" id="address" class="form-control">
             </div>
 
             <div class="mb-3">
-                <label for="vat_no"class="form-label">Partita Iva</label>
+                <label for="vat_no"class="form-label">Partita Iva * :</label>
                 <input type="integer" name="vat_no" id="vat_no" class="form-control">
             </div>
 
             <div class="mb-3">
-                <label for="img_url"class="form-label">Foto ristorante</label>
+                <label for="img_url"class="form-label">Foto ristorante * :</label>
                 <input type="file" name="img_url" id="img_url" class="form-control">
             </div>
 

@@ -44,17 +44,17 @@
             </div> --}}
 
             <div class="mb-3 input-group">
-                <label for="author" class="input-group-text">Ingredienti :</label>
+                <label for="author" class="input-group-text">Ingredienti * :</label>
                 <input class="form-control" type="text" name="ingredients" id="ingredients" value="{{ old('ingredients') }}">
             </div>
 
             <div class="mb-3 input-group">
-                <label for="date" class="input-group-text">Prezzo in (€) euro :</label>
+                <label for="date" class="input-group-text">Prezzo in (€) euro * :</label>
                 <input class="form-control"  type="text" name="price" id="price" value="{{ old('price') }}">
             </div>
 
             <div class="mb-3 input-group">
-                <label for="image" class="input-group-text">Descrizione :</label>
+                <label for="image" class="input-group-text">Descrizione * :</label>
                 <input class="form-control" type="text" name="description" id="description" value="{{ old('description') }}">
             </div>
 
@@ -66,7 +66,7 @@
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" name="visibility" id="visibility" @checked(old('visibility', $dish->visibility))>
                     <label class="form-check-label" for="visibility">
-                        Visibile
+                        Visibile *
                     </label>
                 </div>
             </div>
