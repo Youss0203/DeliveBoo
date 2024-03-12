@@ -19,8 +19,6 @@ class RestaurantController extends Controller
         'img_url' => ['required', 'image'],
         'categories' => ['array'],
 
-
-
     ];
 
 

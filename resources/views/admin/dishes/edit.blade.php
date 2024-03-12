@@ -36,7 +36,7 @@
 
                 <div class="mb-3 input-group">
                     <label for="date" class="input-group-text">Prezzo:</label>
-                    <input class="form-control" type="text" name="price" id="price" value="{{ old('price', $dish->price)}}">
+                    <input class="form-control" type="number" name="price" id="price" value="{{ old('price', $dish->price)}}">
                 </div>
 
                 <div class="mb-3 input-group">

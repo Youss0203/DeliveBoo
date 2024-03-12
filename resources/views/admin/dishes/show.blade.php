@@ -11,9 +11,9 @@
             </h2>
         </div>
         <div class="col-12">
-            <h2 scope="row">
+            {{-- <h2 scope="row">
                 {{ $dish->id }}
-            </h2>
+            </h2> --}}
 
             <p>
                 {{$dish->ingredients}}
@@ -36,7 +36,7 @@
             </div>
             <a href="{{ route('admin.dishes.edit', $dish) }}">
                 <button class="btn btn-sm btn-success mx-1">
-                    Edita
+                    Modifica
                 </button>
             </a>
              <!-- Button trigger modal --> 

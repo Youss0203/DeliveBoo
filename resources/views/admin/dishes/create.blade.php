@@ -4,9 +4,6 @@
 
 @section('main-content')
 
-
-
-
 <section class="container">
     <div class="col-12">
         <div class="col-12">
@@ -21,7 +18,6 @@
     </div>
     @endif
         </div>
-
 
         <form action="{{ route('admin.dishes.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
@@ -81,9 +77,5 @@
                     Pulisci form
                 </button>
             </div>
-        
-        
         </form>
-        
-
 @endsection

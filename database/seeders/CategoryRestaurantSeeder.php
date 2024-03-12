@@ -18,6 +18,8 @@ class CategoryRestaurantSeeder extends Seeder
         $restaurantCategories = [
             // giapponesi
             ['restaurant_id' => 1, 'category_id' => 1],
+            ['restaurant_id' => 1, 'category_id' => 2],
+
             ['restaurant_id' => 2, 'category_id' => 1],
             ['restaurant_id' => 3, 'category_id' => 1],
             // africani
