@@ -36,7 +36,7 @@
             </div>
             <a href="{{ route('admin.dishes.edit', $dish) }}">
                 <button class="btn btn-sm btn-success mx-1">
-                    Edita
+                    Modifica
                 </button>
             </a>
              <!-- Button trigger modal --> 

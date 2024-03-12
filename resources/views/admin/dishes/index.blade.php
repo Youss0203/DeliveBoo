@@ -57,7 +57,7 @@
                                 </a>
                                 <a href="{{ route('admin.dishes.edit', $dish) }}">
                                     <button class="btn btn-sm btn-success mx-1" style="min-width: 4rem;">
-                                        Edita
+                                        Modifica
                                     </button>
                                 </a>
                                
