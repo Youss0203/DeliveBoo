@@ -11,9 +11,9 @@
             </h2>
         </div>
         <div class="col-12">
-            <h2 scope="row">
+            {{-- <h2 scope="row">
                 {{ $dish->id }}
-            </h2>
+            </h2> --}}
 
             <p>
                 {{$dish->ingredients}}
