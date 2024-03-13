@@ -14,13 +14,11 @@ class RestaurantController extends Controller
             $restaurants = Restaurant::whereHas('categories', function ($q) use ($categories) {
                 $q->whereIn('category_id', $categories);
             })->get();
-        }else{
-            $restaurants = Restaurant::all();
+            return response()->json([
+                "success" => true,
+                "results" => $restaurants
+            ]);
         }
-        return response()->json([
-            "success" => true,
-            "results" => $restaurants
-        ]);
     }
 }
 
