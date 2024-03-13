@@ -55,7 +55,6 @@
             </div>
 
             <div class="mb-3 input-group">
-                
                 <input class="form-control" type="file" name="img_url" id="img_url" value="{{ old('img_url') }}">
             </div>
             <div class="mb-3">

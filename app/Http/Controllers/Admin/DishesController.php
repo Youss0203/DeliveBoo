@@ -46,6 +46,12 @@ class DishesController extends Controller
      */
     public function store(Request $request)
     {
+
+        $data = $request->validate($this->rules);
+
+         // validazione prezzo per evitare che sia negativo
+
+
         $request->validate([
             'name' => ['required', 'string', 'min:3', 'max:40'],
             'img_url' => ['required', 'image'],
@@ -55,6 +61,7 @@ class DishesController extends Controller
         ]);
 
         $data = $request->all();
+
         $data['visibility'] = isset($data['visibility']);
         $data['restaurant_id'] = Restaurant::where('id', Auth::id())->pluck('id')->first();
 

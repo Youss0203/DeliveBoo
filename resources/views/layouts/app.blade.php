@@ -22,7 +22,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ route('admin.dishes.index') }}">
+                <a class="navbar-brand" href="http://localhost:5173">
                     <img src="{{ asset('images/deliveboo_logo.png') }}" height="60">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"

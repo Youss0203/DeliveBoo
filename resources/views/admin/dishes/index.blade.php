@@ -43,26 +43,26 @@
                             <td>
                                 <div width="10">
                                     @if ( str_starts_with($dish->img_url, 'http'))
-                                        <img class="img-fluid" src="{{ $dish->img_url }}" alt="">
+                                        <img class="img-fluid my_width" src="{{ $dish->img_url }}" alt="">
                                     @else
-                                        <img src="{{ asset('storage') . '/' . $dish->img_url }}" alt="">
+                                        <img  class="img-fluid my_width" src="{{ asset('storage') . '/' . $dish->img_url }}" alt="">
                                     @endif
                                 </div>
                             </td>
                             <td class="">
                                 <a href="{{ route('admin.dishes.show', $dish) }}">
-                                    <button class="btn btn-sm btn-info" style="min-width: 4rem;">
+                                    <button class="btn btn-sm btn-info " style="min-width: 4rem;">
                                         Mostra
                                     </button>
                                 </a>
                                 <a href="{{ route('admin.dishes.edit', $dish) }}">
-                                    <button class="btn btn-sm btn-success mx-1" style="min-width: 4rem;">
+                                    <button class="btn btn-sm btn-success  mt-2 mb-2" style="min-width: 4rem;">
                                         Modifica
                                     </button>
                                 </a>
                                
                                  <!-- Button trigger modal --> 
-                                 <button type="button" class="btn btn-warning btn-sm mx-1 custom_button" style="min-width: 4rem;" data-bs-toggle="modal" data-bs-target="#exampleModal-{{ $dish->id }}">
+                                 <button type="button" class="btn btn-warning btn-sm  custom_button" style="min-width: 4rem;" data-bs-toggle="modal" data-bs-target="#exampleModal-{{ $dish->id }}">
                                     Cancella
                                 </button>
 
