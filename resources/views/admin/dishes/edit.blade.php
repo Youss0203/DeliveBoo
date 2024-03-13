@@ -37,6 +37,9 @@
                 <div class="mb-3 input-group">
                     <label for="date" class="input-group-text">Prezzo in (€) euro * :</label>
                     <input class="form-control" type="text" name="price" id="price" value="{{ old('price', $dish->price)}}">
+                    @error('price')
+                        <div class="text-danger">{{ $message }}</div>
+                    @enderror
                 </div>
 
                 <div class="mb-3 input-group">
