@@ -11,17 +11,11 @@
                 Ecco i tuoi progetti, {{ Auth::user()->name }}
             </h2>
         </div>
-
     </div>
-
 </div>
-
-
 
 <section class="container">
     <div class="col-12">
-
-    
         <table class="table">
             <thead>
                 <tr>
@@ -33,7 +27,6 @@
             </thead>
             <tbody>
                @forelse ($projects as $project )
-              
                     <tr>
                         <th scope="row">
                             {{ $project->id }}
@@ -79,21 +72,16 @@
                             </form>
                         </td>
                     </tr>
-                   
                @empty
                    <tr>
                         <td colspan="4">
                             Non c'è nulla da vedere!
                         </td>
                    </tr>
-               @endforelse
-               
-               
+               @endforelse               
             </tbody>
         </table>
     </div>
-
 </section>
 
-    
 @endsection
