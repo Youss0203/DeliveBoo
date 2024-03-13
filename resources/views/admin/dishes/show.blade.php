@@ -28,9 +28,9 @@
             <div class="p-5">
 
             @if ( str_starts_with($dish->img_url, 'http'))
-                <img src="{{ $dish->img_url }}" alt="">
+                <img class="img-fluid my_width_show_create" src="{{ $dish->img_url }}" alt="">
             @else
-                <img src="{{ asset('storage') . '/' . $dish->img_url }}" alt="">
+                <img class="img-fluid my_width_show_create" src="{{ asset('storage') . '/' . $dish->img_url }}" alt="">
             @endif
 
             </div>

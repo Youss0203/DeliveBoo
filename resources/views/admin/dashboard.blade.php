@@ -3,17 +3,17 @@
 @section('title', 'Admin Dashboard')
 
 @section('main-content')
-<div class="container">
-    <div class="row">
+<div class="container ">
+    <div class="row pe-0">
         <div class="col-12">
             <div>
-              <section class="col-10 offset-1">
-                <div class="card" style="width: 100%;">
+              <section class="col-12 col-md-6 offset-md-3">
+                <div class="card" style="width: 100%" >
                     <div>
                         @if ( str_starts_with($restaurant->img_url, 'http'))
-                            <img src="{{ $restaurant->img_url }}" alt="">
+                            <img class="img-fluid rounded-top my_dash_img" src="{{ $restaurant->img_url }}" alt="">
                         @else
-                            <img src="{{ asset('storage') . '/' . $restaurant->img_url }}" alt="">
+                            <img class="img-fluid rounded-top" src="{{ asset('storage') . '/' . $restaurant->img_url }}" alt="">
                         @endif
                     </div>
                     <div class="card-body d-flex align-items-center flex-column mb-3">

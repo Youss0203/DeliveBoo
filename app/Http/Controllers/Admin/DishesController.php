@@ -47,7 +47,7 @@ class DishesController extends Controller
     {
         $data = $request->validate($this->rules);
 
-        $data = $request->validate(['price' => 'required|numeric|min:0',]); // validazione prezzo per evitare che sia negativo
+         // validazione prezzo per evitare che sia negativo
 
         $data['visibility'] = isset($data['visibility']);
         $data['restaurant_id'] = Restaurant::where('id', Auth::id())->pluck('id')->first();
