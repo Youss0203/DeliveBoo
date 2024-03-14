@@ -310,7 +310,7 @@ class DishesSeeder extends Seeder
                 "ingredients" => "Pollo, pomodoro, panna, spezie tikka masala",
                 "visibility" => true,
                 "description" => "Un piatto classico dell'India settentrionale, il Pollo Tikka Masala è una deliziosa combinazione di pezzi di pollo tenero marinato in una salsa cremosa e speziata a base di pomodoro e panna. Perfetto da accompagnare con del riso basmati caldo.",
-                "restaurant_id" => 22
+                "restaurant_id" => 21
             ],
             [
                 "name" => "Paneer Tikka",
@@ -355,7 +355,7 @@ class DishesSeeder extends Seeder
                 "ingredients" => "Pollo, mandorle, panna, spezie korma",
                 "visibility" => true,
                 "description" => "Il Chicken Korma è un piatto di pollo ricco e cremoso, preparato con una salsa a base di mandorle, panna e una miscela di spezie aromatiche. Un'esplosione di sapori che delizierà il palato di chiunque.",
-                "restaurant_id" => 23
+                "restaurant_id" => 19
             ],
             [
                 "name" => "Dal Tadka",
@@ -373,7 +373,7 @@ class DishesSeeder extends Seeder
                 "ingredients" => "Pollo, pomodoro, panna, burro, spezie masala",
                 "visibility" => true,
                 "description" => "Il Butter Chicken è un piatto di pollo succoso e tenero, immerso in una salsa cremosa e burrosa aromatizzata con spezie masala. Con il suo sapore ricco e avvolgente, è un piatto che conquisterà il cuore di chiunque.",
-                "restaurant_id" => 24
+                "restaurant_id" => 20
             ],
             [
                 "name" => "Naan",
@@ -469,7 +469,7 @@ class DishesSeeder extends Seeder
 
                 'visibility' => true,
                 'description' => 'Il Green Curry è un curry piccante e aromatico preparato con pollo, peperoni, foglie di basilico e una miscela di spezie fresche. È cotto in una salsa a base di latte di cocco, che conferisce al piatto una consistenza cremosa e un sapore ricco.',
-                'restaurant_id' => 34,
+                'restaurant_id' => 33,
             ],
             [
                 'name' => 'Som Tum',
