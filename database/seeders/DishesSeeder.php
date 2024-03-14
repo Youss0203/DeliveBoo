@@ -703,7 +703,7 @@ class DishesSeeder extends Seeder
             ],
             [
                 'name' => 'Tiramisù',
-                'img_url' => 'https://example.com/tiramisu.jpg',
+                'img_url' => 'https://media.istockphoto.com/id/1248489319/it/foto/torta-tiramis%C3%B9-con-menta.jpg?s=612x612&w=0&k=20&c=dXJ8_czKwX_M8FLLqQWiM4jS4KoFIN1AbJtLuW_M-wo=',
                 'price' => 8.99,
                 'ingredients' => 'Savoiardi, caffè espresso, mascarpone, uova, cacao in polvere',
 
