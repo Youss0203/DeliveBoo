@@ -16,7 +16,7 @@ class RestaurantController extends Controller
         'address' => ['required', 'min:3', 'max:60'],
         'vat_no' => ['required', 'integer'],
         'img_url' => ['required', 'image'],
-        'categories' => ['array'],
+        'categories' => ['required', 'array'],
     ];
 
     public function index()
@@ -41,20 +41,24 @@ class RestaurantController extends Controller
 
     public function store(Request $request)
     {
-        // dd($request->all());
         $data = $request->validate($this->rules);
         $data['user_id'] = Auth::id();
-        // Ultimo pezzettino appena aggiunto
+
+        // Gestione dell'immagine
         $imageSrc = Storage::put('uploads/Restaurants', $data['img_url']);
         $imageUrl = Storage::url($imageSrc);
         $data['img_url'] = $imageUrl;
+
+        // Creazione del nuovo ristorante
         $newRestaurant = Restaurant::create($data);
+
+        // Aggiornamento delle categorie associate al ristorante
         $newRestaurant->categories()->sync($data['categories']);
 
-        
-
-        return to_route('admin.dashboard');
+        // Ritorna alla dashboard
+        return redirect()->route('admin.dashboard');
     }
+
 
     /**
      * Display the specified resource.

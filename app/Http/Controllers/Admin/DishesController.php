@@ -17,7 +17,7 @@ class DishesController extends Controller
     private $rules = [
         'name' => ['required', 'string', 'min:3', 'max:40'],
         'img_url' => ['required', 'image'],
-        'price' => ['required', 'decimal:2',],
+        'price' => ['required', 'decimal:2', 'min:0'],
         'ingredients' => ['required', 'string'],
         'description' => ['required', 'string'],
 
@@ -49,18 +49,7 @@ class DishesController extends Controller
 
         $data = $request->validate($this->rules);
 
-         // validazione prezzo per evitare che sia negativo
-
-
-        $request->validate([
-            'name' => ['required', 'string', 'min:3', 'max:40'],
-            'img_url' => ['required', 'image'],
-            'price' => ['required', 'numeric', 'min:0'], // Modifica la validazione del prezzo
-            'ingredients' => ['required', 'string'],
-            'description' => ['required', 'string'],
-        ]);
-
-        $data = $request->all();
+        // $data = $request->all();
 
         $data['visibility'] = isset($data['visibility']);
         $data['restaurant_id'] = Restaurant::where('id', Auth::id())->pluck('id')->first();
