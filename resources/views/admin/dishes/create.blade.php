@@ -39,6 +39,8 @@
                 </select>
             </div> --}}
 
+
+            
             <div class="mb-3 input-group">
                 <label for="author" class="input-group-text">Ingredienti * :</label>
                 <input class="form-control" type="text" name="ingredients" id="ingredients" value="{{ old('ingredients') }}">
