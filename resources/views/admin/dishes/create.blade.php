@@ -23,7 +23,7 @@
             @csrf
 
             <div class="mb-3 input-group">
-                <label for="name_project" class="input-group-text">Nome piatto :</label>
+                <label for="name_project" class="input-group-text">Nome piatto * :</label>
                 <input class="form-control" type="text" name="name" id="name" value="{{ old('name') }}">
             </div>
             
@@ -55,6 +55,7 @@
             </div>
 
             <div class="mb-3 input-group">
+                <label for="image" class="input-group-text">Immagine *</label>
                 <input class="form-control" type="file" name="img_url" id="img_url" value="{{ old('img_url') }}">
             </div>
             <div class="mb-3">
