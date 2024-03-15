@@ -44,10 +44,14 @@ class RestaurantController extends Controller
         // dd($request->all());
         $data = $request->validate($this->rules);
         $data['user_id'] = Auth::id();
-        $imageSrc = Storage::put('uploads/restaurants', $data['img_url']);
-        $data['img_url'] = $imageSrc;
+        // Ultimo pezzettino appena aggiunto
+        $imageSrc = Storage::put('uploads/Restaurants', $data['img_url']);
+        $imageUrl = Storage::url($imageSrc);
+        $data['img_url'] = $imageUrl;
         $newRestaurant = Restaurant::create($data);
         $newRestaurant->categories()->sync($data['categories']);
+
+        
 
         return to_route('admin.dashboard');
     }
