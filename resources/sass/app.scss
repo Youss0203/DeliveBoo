@@ -21,8 +21,107 @@
     width: 100%;
 }
 
+
+.card-login {
+    border: 1px solid #fe7e00;
+    width: 700px;
+    transition: background-color 1s ease; /* Aggiungi la transizione qui */
+}
+
+.card-login:hover {
+    background-color: #ffc182; 
+}
+
+.card-login:active {
+    background-color: #ffc182; 
+}
+
+.my_dropdown{
+    position: absolute;
+    right: 5.5rem;
+}
+
+.pw-forget_custom{
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.pw-forget_custom:hover{
+    color: #fe7e00;
+}
+
+.pw-forget_custom:active{
+    color: #fe7e00;
+}
+
+.custom_email-button:focus{
+    border: 2px solid #ffc182;
+    box-shadow: none;
+}
+
+.custom_pw-button:focus{
+    border: 2px solid #ffc182;
+    box-shadow: none;
+}
+
+#custom_rememberme-checkbox{
+    accent-color: #fe7e00;
+    border: 2px solid #fe7e00;
+    box-shadow: none;
+}
+
+#custom_rememberme-checkbox:checked{
+    background-color: #fe7e00;
+    border: 2px solid #fe7e00;
+}
+
+
+.custom_restaurant-card{
+    border: 1px solid #fe7e00;
+}
+
+.custom_restaurant-card:hover {
+    transition: .4s ease;
+    box-shadow: rgba(254, 126, 0, 0.25) 0px 54px 55px, 
+                rgba(254, 126, 0, 0.12) 0px -12px 30px, 
+                rgba(254, 126, 0, 0.12) 0px 4px 6px, 
+                rgba(254, 126, 0, 0.17) 0px 12px 13px, 
+                rgba(254, 126, 0, 0.09) 0px -3px 5px;
+}
+
+.card{
+    height: 100%;
+}
+
+.custom_card:hover{
+    transition: .4s ease;
+    box-shadow: rgba(254, 126, 0, 0.25) 0px 54px 55px, 
+                rgba(254, 126, 0, 0.12) 0px -12px 30px, 
+                rgba(254, 126, 0, 0.12) 0px 4px 6px, 
+                rgba(254, 126, 0, 0.17) 0px 12px 13px, 
+                rgba(254, 126, 0, 0.09) 0px -3px 5px;
+}
+
+.card-show{
+    width: 80%;
+}
+
+.card-show{
+    border: 1px solid #fe7e00;
+}
+
+.card-show:hover{
+    transition: .4s ease;
+    box-shadow: rgba(254, 126, 0, 0.25) 0px 54px 55px, 
+                rgba(254, 126, 0, 0.12) 0px -12px 30px, 
+                rgba(254, 126, 0, 0.12) 0px 4px 6px, 
+                rgba(254, 126, 0, 0.17) 0px 12px 13px, 
+                rgba(254, 126, 0, 0.09) 0px -3px 5px;
+
 .sinvalid-feedback {
     display: none; /* Inizialmente nascosto */
     color: red; /* Colore rosso per indicare errore */
     font-size: 14px; /* Dimensione del carattere */
+
 }
