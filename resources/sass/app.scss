@@ -87,7 +87,7 @@
 
 
 
-
+.sfondo-orange:hover {
 
 #custom_rememberme-checkbox:checked{
     background-color: #fe7e00;
@@ -108,12 +108,12 @@
                 rgba(254, 126, 0, 0.09) 0px -3px 5px;
 }
 
-.container-create{
-    width: 45%;
-    
+.card{
+    height: 100%;
 }
 
-.container-create:hover {
+.custom_card:hover{
+
     transition: .4s ease;
     box-shadow: rgba(254, 126, 0, 0.25) 0px 54px 55px, 
                 rgba(254, 126, 0, 0.12) 0px -12px 30px, 
@@ -122,15 +122,12 @@
                 rgba(254, 126, 0, 0.09) 0px -3px 5px;
 }
 
+
 #edit-form input:focus{
     box-shadow: none;
     border-color: #fe7e00;
 }
 
-.form-create input:focus{
-    box-shadow: none;
-    border-color: #fe7e00;
-}
 
 
 .card-show{
