@@ -24,7 +24,8 @@
 
             <div class="mb-3 input-group">
                 <label for="name_project" class="input-group-text">Nome piatto * :</label>
-                <input class="form-control" type="text" name="name" id="name" value="{{ old('name') }}">
+                <input class="form-control" type="text" name="name" id="name" value="{{ old('name') }}" required minlength="2">
+                <div class="invalid-feedback">Il nome del piatto è obbligatorio e deve contenere almeno 2 caratteri.</div>
             </div>
             
             {{-- <div class="mb-3 input-group">
@@ -43,7 +44,8 @@
             
             <div class="mb-3 input-group">
                 <label for="author" class="input-group-text">Ingredienti * :</label>
-                <input class="form-control" type="text" name="ingredients" id="ingredients" value="{{ old('ingredients') }}">
+                <input class="form-control" type="text" name="ingredients" id="ingredients" required minlength="10" value="{{ old('ingredients') }}">
+                <div class="invalid-feedback">Gli ingredienti del piatto sono obbligatoria e deve contenere almeno 10 caratteri.</div>
             </div>
 
             <div class="mb-3 input-group">
@@ -53,7 +55,8 @@
 
             <div class="mb-3 input-group">
                 <label for="image" class="input-group-text">Descrizione * :</label>
-                <input class="form-control" type="text" name="description" id="description" value="{{ old('description') }}">
+                <input class="form-control" type="text" name="description" id="description" required minlength="2" maxlength="500" value="{{ old('description') }}">
+                <div class="invalid-feedback">La descrizione è obbligatoria.</div>
             </div>
 
             <div class="mb-3 input-group">
