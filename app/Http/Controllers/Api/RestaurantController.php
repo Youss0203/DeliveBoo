@@ -13,7 +13,7 @@ class RestaurantController extends Controller
             $categories = $request['category'];
             $restaurants = Restaurant::whereHas('categories', function ($q) use ($categories) {
                 $q->whereIn('category_id', $categories);
-            })->get();
+            })->with('categories')->get();
             return response()->json([
                 "success" => true,
                 "results" => $restaurants
