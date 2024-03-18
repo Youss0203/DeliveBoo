@@ -41,7 +41,7 @@
                         </div>
 
                         <div class="mb-3 d-grid">
-                            <button type="submit" class="btn" style="background-color: #fe7e00">{{ __('Accedi') }}</button>
+                            <button type="submit" class="btn w-25 text-white mt-3" style="background-color: #fe7e00">{{ __('Accedi') }}</button>
                         </div>
 
                         @if (Route::has('password.request'))
