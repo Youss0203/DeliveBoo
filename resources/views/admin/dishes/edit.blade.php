@@ -20,7 +20,7 @@
         <div class="col-7">
             
 
-            <form action="{{ route('admin.dishes.update', $dish)}}" method="POST" enctype="multipart/form-data">
+            <form id="edit-form" action="{{ route('admin.dishes.update', $dish)}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
 
