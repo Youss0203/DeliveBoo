@@ -51,5 +51,10 @@
                 rgba(254, 126, 0, 0.09) 0px -3px 5px;
 }
 
+#edit-form input:focus{
+    box-shadow: none;
+    border-color: #fe7e00;
+}
+
 
 

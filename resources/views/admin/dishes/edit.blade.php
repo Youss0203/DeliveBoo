@@ -20,7 +20,7 @@
         <div class="col-7 sfondo-orange" style="background-color: #ffbb79; border-radius:20px;">
             
 
-            <form action="{{ route('admin.dishes.update', $dish)}}" method="POST" enctype="multipart/form-data">
+            <form id="edit-form" action="{{ route('admin.dishes.update', $dish)}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
 
