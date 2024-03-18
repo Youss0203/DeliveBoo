@@ -14,11 +14,13 @@
         <div class="col-md-4 mb-4">
             <div class="card custom_card">
                 <img src="{{ str_starts_with($dish->img_url, 'http') ? $dish->img_url : asset('storage') . '/' . $dish->img_url }}" class="card-img-top" alt="{{ $dish->name }}">
-                <div class="card-body">
+                <div class="card-body d-flex flex-column"> <!-- Added "d-flex" and "flex-column" classes -->
                     <h3 class="card-title fw-bold">{{ $dish->name }}</h3>
                     <p class="card-text">{{ $dish->description }}</p>
                     <h5 class="card-title fst-italic">{{ $dish->ingredients }}</h5>
-                    <p class="card-text fw-bold fs-4 text-black">{{ $dish->price }} €</p>
+                    <div class="mt-auto"> <!-- Added "mt-auto" class to push the price div to the bottom -->
+                        <p class="card-text fw-bold fs-4 text-black">{{ $dish->price }} €</p>
+                    </div>
                 </div>
                 <div class="card-footer">
                     <a href="{{ route('admin.dishes.show', $dish) }}" class="btn text-white" style="background-color: #fe7e00">Mostra</a>
