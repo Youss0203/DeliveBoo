@@ -26,12 +26,14 @@
 
                 <div class="mb-3 input-group">
                     <label for="title" class="input-group-text">Nome * :</label>
-                    <input class="form-control" type="text" name="name" id="name" value="{{ old('nome', $dish->name)}}">
+                    <input class="form-control" type="text" name="name" id="name" value="{{ old('nome', $dish->name)}}" required minlength="2">
+                    <div class="invalid-feedback">Il nome del piatto è obbligatorio e deve contenere almeno 2 caratteri.</div>
                 </div>
 
                 <div class="mb-3 input-group">
                     <label for="author" class="input-group-text">Ingredienti * :</label>
-                    <input class="form-control" type="text" name="ingredients" id="ingredients" value="{{ old('ingredients', $dish->ingredients)}}">
+                    <input class="form-control" type="text" name="ingredients" id="ingredients" value="{{ old('ingredients', $dish->ingredients)}}" required minlength="10">
+                    <div class="invalid-feedback">Gli ingredienti del piatto sono obbligatoria e deve contenere almeno 10 caratteri.</div>
                 </div>
 
                 <div class="mb-3 input-group">
@@ -44,7 +46,8 @@
 
                 <div class="mb-3 input-group">
                     <label for="post_image" class="input-group-text">Descrizione * :</label>
-                    <input class="form-control" type="text" name="description" id="description" value="{{ old('description', $dish->description)}}">
+                    <input class="form-control" type="text" name="description" id="description" value="{{ old('description', $dish->description)}}" required minlength="2" maxlength="500">
+                    <div class="invalid-feedback">La descrizione è obbligatoria.</div>
                 </div>
 
                 <div class="mb-3 input-group">

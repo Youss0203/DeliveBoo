@@ -49,10 +49,11 @@ class DishesController extends Controller
 
         $data = $request->validate($this->rules);
 
+
         // $data = $request->all();
 
         $data['visibility'] = isset($data['visibility']);
-        $data['restaurant_id'] = Restaurant::where('id', Auth::id())->pluck('id')->first();
+        $data['restaurant_id'] = Restaurant::where('user_id', Auth::id())->pluck('id')->first();
 
         if ($request->hasFile('img_url')) {
             $imageSrc = Storage::put('uploads/dishes', $data['img_url']);
