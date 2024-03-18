@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('company_name', 50);
             $table->string('address', 60);
-            $table->integer('vat_no')->lenght(10);
+            $table->integer('vat_no')->length(10);
             $table->string('img_url', 300);
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');

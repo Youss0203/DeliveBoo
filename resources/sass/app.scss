@@ -21,6 +21,7 @@
     width: 100%;
 }
 
+
 .card-login {
     border: 1px solid #fe7e00;
     width: 700px;
@@ -117,4 +118,10 @@
                 rgba(254, 126, 0, 0.12) 0px 4px 6px, 
                 rgba(254, 126, 0, 0.17) 0px 12px 13px, 
                 rgba(254, 126, 0, 0.09) 0px -3px 5px;
+
+.sinvalid-feedback {
+    display: none; /* Inizialmente nascosto */
+    color: red; /* Colore rosso per indicare errore */
+    font-size: 14px; /* Dimensione del carattere */
+
 }
