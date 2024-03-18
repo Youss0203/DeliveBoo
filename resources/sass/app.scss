@@ -21,3 +21,58 @@
     width: 100%;
 }
 
+.card-login{
+
+}
+
+.my_dropdown{
+    position: absolute;
+    right: 5.5rem;
+}
+
+.pw-forget_custom{
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.pw-forget_custom:hover{
+    color: #fe7e00;
+}
+
+.pw-forget_custom:active{
+    color: #fe7e00;
+}
+
+.custom_email-button:focus{
+    border: 2px solid #ffc182;
+    box-shadow: none;
+}
+
+.custom_pw-button:focus{
+    border: 2px solid #ffc182;
+    box-shadow: none;
+}
+
+#custom_rememberme-checkbox{
+    border: none;
+}
+
+#custom_rememberme-checkbox:checked{
+    accent-color: #fe7e00;
+    background-color: white;
+}
+
+// .custom_rememberme-check{
+//     border: 2px solid #fe7e00;
+//     border-color: none;
+// }
+
+// .form-check-input:checked{
+//     border-color: none;
+// }
+
+// .custom_rememberme-check:checked{
+//     background-color: #fe7e00;
+//     border-color: none;
+// }
