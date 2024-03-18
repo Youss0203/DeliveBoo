@@ -8,7 +8,7 @@
             <div class="col-12">
                 <div>
                     <section class="col-12 col-md-6 offset-md-3">
-                        <div class="card" style="width: 100%">
+                        <div class="card custom_restaurant-card" style="width: 100%">
                             <div>
                                 @if (str_starts_with($restaurant->img_url, 'http'))
                                     <img class="img-fluid rounded-top my_dash_img" src="{{ $restaurant->img_url }}"

@@ -23,7 +23,7 @@
     @yield('body')
 
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-dark shadow-sm w-100">
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm w-100" style="background-color: #fe7e00;">
             <div class="container">
                 <a class="navbar-brand" href="http://localhost:5173">
                     <img src="{{ asset('../../images/Risorsa 2.svg') }}" height="60">
