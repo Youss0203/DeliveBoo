@@ -21,7 +21,7 @@
                                 </span>
                             @enderror
                         </div>
-
+                        {{-- ciao --}}
                         <div class="mb-3">
                             <label for="password" class="form-label">{{ __('Password *') }}</label>
                             <input id="password" placeholder="Inserisci la tua password" type="password" class="custom_pw-button form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
