@@ -33,24 +33,15 @@
                                         Vedi i tuoi piatti
                                     </button>
                                 </a>
+                                {{-- button per reindirizzare agli ordini  --}}
+                                <a href="{{ route('admin.dishes.index') }}">
+                                    <button class="prova btn btn-info">
+                                        Vedi i tuoi ordini
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </section>
-
-                    {{-- <section class="col-xs-12 col-md-4">
-                <div class="d-flex justify-content-center">
-                    <a class="px-5 mb-2" href="{{ route('admin.dishes.create') }}">
-                        <button class="btn btn-primary" style="width: 8rem">
-                            Aggiungi Piatto
-                        </button>
-                    </a>
-                    <a href="{{ route('admin.dishes.index') }}">
-                        <button class="btn btn-primary" style="width: 8rem">
-                            Vedi i tuoi piatti
-                        </button>
-                    </a>
-                </div>
-            </section> --}}
                 </div>
             </div>
         </div>
