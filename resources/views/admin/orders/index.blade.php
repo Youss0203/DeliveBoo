@@ -4,27 +4,26 @@
 
 @section('main-content')
 <div class="container">
-    <div class="index_row row"> <!-- Removed "row" class -->
+    <div class="index_row row">
         <div class="col-12 p-2 mb-3 text-center">
             <h2>
-                Questi sono i tuoi piatti presenti, {{ Auth::user()->name }}!
+                Questi sono i tuoi ordini, {{ Auth::user()->name }}!
             </h2>
         </div>
-        @forelse ($dishes as $dish)
+        @forelse ($orders as $order)
         <div class="col-md-4 mb-4">
             <div class="card custom_card">
-                <img src="{{ str_starts_with($dish->img_url, 'http') ? $dish->img_url : asset('storage') . '/' . $dish->img_url }}" class="card-img-top" alt="{{ $dish->name }}">
+
                 <div class="card-body">
-                    <h3 class="card-title fw-bold">{{ $dish->name }}</h3>
-                    <p class="card-text">{{ $dish->description }}</p>
-                    <h5 class="card-title fst-italic">{{ $dish->ingredients }}</h5>
-                    <p class="card-text fw-bold fs-4 text-black">{{ $dish->price }} €</p>
+                    <p class="card-text"><strong>Nome:</strong> {{ $order->customer_name }} {{ $order->customer_lastname }}</p>
+                    <p class="card-text"><strong>Indirizzo:</strong> {{ $order->customer_address }}</p>
+                    <p class="card-text"><strong>Telefono:</strong> {{ $order->customer_phone }}</p>
+                    <p class="card-text"><strong>Costo totale:</strong> {{ $order->total_amount }}</p>
+
                 </div>
-                <div class="card-footer">
-                    <a href="{{ route('admin.dishes.show', $dish) }}" class="btn text-white" style="background-color: #fe7e00">Mostra</a>
-                    <a href="{{ route('admin.dishes.edit', $dish) }}" class="btn btn-warning">Modifica</a>
+                <div class="card-footer text-center">
                     <!-- Button trigger modal --> 
-                    <button type="button" class="btn btn-danger custom_button" data-bs-toggle="modal" data-bs-target="#exampleModal-{{ $dish->id }}">
+                    <button type="button" class="btn btn-danger custom_button" data-bs-toggle="modal" data-bs-target="#exampleModal-{{ $order->id }}">
                         Cancella
                     </button>
                 </div>
@@ -32,7 +31,7 @@
         </div>
 
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal-{{ $dish->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="exampleModal-{{ $order->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -40,13 +39,13 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body fs-4">
-                        Vuoi veramente cancellare il piatto 
-                        <span class="fw-bolder">{{ $dish->name }}?</span>
+                        Vuoi veramente cancellare l'ordine di 
+                        <span class="">{{ $order->customer_name }} {{ $order->customer_lastname }}?</span>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
-                        <form class="d-inline-block" action="{{ route('admin.dishes.destroy', $dish) }}" method="POST">
+                        <form class="d-inline-block" action="{{ route('admin.orders.destroy', $order) }}" method="POST">
                             @csrf
                             @method('DELETE')
 
@@ -60,14 +59,9 @@
         </div>
         @empty
         <div class="col-12">
-            <p>Non ci sono piatti.</p>
+            <p>Non ci sono ordini.</p>
         </div>
         @endforelse
-    </div>
-    <div class="row mt-3">
-        <div class="col-12">
-            <a href="{{ route('admin.dishes.create') }}" class="btn btn-primary">Aggiungi Piatto</a>
-        </div>
     </div>
 </div>
 @endsection
