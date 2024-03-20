@@ -7,12 +7,12 @@
     <div class="index_row row"> <!-- Removed "row" class -->
         <div class="col-12 p-2 mb-3 text-center">
             <h2>
-                Questi sono i tuoi piatti presenti, {{ Auth::user()->name }}!
+                Questi sono i tuoi piatti: 
             </h2>
         </div>
         @forelse ($dishes as $dish)
         <div class="col-md-4 mb-4">
-            <div class="card custom_card">
+            <div class="card custom_card" style="height: 100%">
                 <img src="{{ str_starts_with($dish->img_url, 'http') ? $dish->img_url : asset('storage') . '/' . $dish->img_url }}" class="card-img-top" alt="{{ $dish->name }}">
                 <div class="card-body">
                     <h3 class="card-title fw-bold">{{ $dish->name }}</h3>
