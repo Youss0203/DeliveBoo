@@ -34,11 +34,11 @@
                                     </button>
                                 </a>
                                 {{-- button per reindirizzare agli ordini  --}}
-                                <a href="{{ route('admin.dishes.index') }}">
+                                {{-- <a href="{{ route('admin.dishes.index') }}">
                                     <button class="prova btn btn-info">
                                         Vedi i tuoi ordini
                                     </button>
-                                </a>
+                                </a> --}}
                             </div>
                         </div>
                     </section>
