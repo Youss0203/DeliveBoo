@@ -15,7 +15,6 @@ class OrderController extends Controller
      */
     public function index()
     {
-
         $id = Restaurant::where('id', Auth::id())->pluck('id')->first();
         $orders = Order::whereHas('dishes', function ($q) use ($id) {
             $q->where('restaurant_id', $id);
@@ -36,7 +35,19 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request->all());
+        // Validazione dei dati inviati dalla richiesta
+        $validatedData = $request->validate([
+            'customer_name' => 'required|string|max:255',
+            'customer_lastname' => 'required|string|max:255',
+            'customer_address' => 'required|string|max:255',
+            'customer_phone' => 'required|string|max:20',
+        ]);
+
+        // Creazione di un nuovo ordine utilizzando i dati validati
+        $order = Order::create($validatedData);
+        // Restituisci una risposta per indicare che l'ordine è stato salvato con successo
+        return response()->json(['message' => 'Ordine salvato con successo'], 201);
     }
 
     /**
