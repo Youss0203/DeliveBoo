@@ -23,7 +23,7 @@
         <nav class="navbar navbar-expand-md navbar-dark shadow-sm" style="background-color: #fe7e00;"> 
             <div class="container">
                 <a class="navbar-brand" href="http://localhost:5173">
-                    <img src="{{ asset('../../images/Risorsa 2.svg') }}" class="pt-1" height="80">
+                    <img style="padding-top: .4rem;" src="{{ asset('../../images/Risorsa 4.svg') }}" class="pt-1" height="35px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -43,13 +43,13 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link fs-3 fw-bold text-light" href="{{ route('login') }}">{{ __('Accedi') }}</a>
+                                    <a class="nav-link fs-4 fw-bold text-light" href="{{ route('login') }}">{{ __('Accedi') }}</a>
                                 </li>
                             @endif
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link fs-3 fw-bold text-light" href="{{ route('register') }}">{{ __('Registrati') }}</a>
+                                    <a class="nav-link fs-4 fw-bold text-light" href="{{ route('register') }}">{{ __('Registrati') }}</a>
                                 </li>
                             @endif
 
@@ -115,7 +115,7 @@
                                 </form>
                             </div>
 
-                                                        
+                            
                         @endguest
                     </ul>
                 </div>

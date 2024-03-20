@@ -26,7 +26,7 @@
         <nav class="navbar navbar-expand-md navbar-light shadow-sm w-100" style="background-color: #fe7e00;">
             <div class="container">
                 <a class="navbar-brand" href="http://localhost:5173">
-                    <img src="{{ asset('../../images/Risorsa 2.svg') }}" height="60">
+                    <img style="padding-top: .4rem;" src="{{ asset('../../images/Risorsa 4.svg') }}" height="35px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
