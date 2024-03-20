@@ -2,12 +2,16 @@
 
 
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Route;   
+use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Admin\DishesController as AdminDishesController;
+use App\Http\Controllers\Admin\OrderController;
 use App\Http\Controllers\Admin\RestaurantController as AdminRestaurantController;
+use App\Http\Controllers\Admin\OrderController as AdminOrderController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,6 +42,6 @@ Route::middleware('auth')
         Route::resource('/restaurants', AdminRestaurantController::class);
         Route::resource('/dishes', AdminDishesController::class);
         Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('dashboard');
-        
 
+        Route::resource('/orders', AdminOrderController::class);
     });
