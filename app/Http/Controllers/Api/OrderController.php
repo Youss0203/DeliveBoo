@@ -1,12 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Order;
 use Illuminate\Http\Request;
-use App\Models\Restaurant;
-use Illuminate\Support\Facades\Auth;
 
 class OrderController extends Controller
 {
@@ -14,18 +12,6 @@ class OrderController extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    {
-        $id = Restaurant::where('id', Auth::id())->pluck('id')->first();
-        $orders = Order::whereHas('dishes', function ($q) use ($id) {
-            $q->where('restaurant_id', $id);
-        })->with('dishes')->get();
-        return view('admin.orders.index', compact('orders'));
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
     {
         //
     }
@@ -35,7 +21,6 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
         // Validazione dei dati inviati dalla richiesta
         $validatedData = $request->validate([
             'customer_name' => 'required|string|max:255',
@@ -45,7 +30,7 @@ class OrderController extends Controller
         ]);
 
         // Creazione di un nuovo ordine utilizzando i dati validati
-        $order = Order::create($validatedData);
+        Order::create($validatedData);
         // Restituisci una risposta per indicare che l'ordine è stato salvato con successo
         return response()->json(['message' => 'Ordine salvato con successo'], 201);
     }
@@ -54,14 +39,6 @@ class OrderController extends Controller
      * Display the specified resource.
      */
     public function show(string $id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
     {
         //
     }

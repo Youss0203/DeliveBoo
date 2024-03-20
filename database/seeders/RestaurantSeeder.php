@@ -18,7 +18,7 @@ class RestaurantSeeder extends Seeder
                 'company_name' => 'Sakura Sushi Bar',
                 'address' => 'Corso Buenos Aires, 256 - Milano',
                 'vat_no' => 78635672,
-                'img_url' => 'https://media.istockphoto.com/id/157577306/it/foto/interni-del-ristorante-di-sushi-fusion.jpg?s=612x612&w=0&k=20&c=n5OlA2-D8GhtOv4KH6zXyiNXDhNOkle2wf1UxCixEL4=',
+                'img_url' => 'https://media.istockphoto.com/id/1153738785/it/foto/coppia-attraente-che-ride-con-vino-fuori-dal-ristorante-giapponese.jpg?s=612x612&w=0&k=20&c=6Sg4VP3WOekdvfLyr9AZQl1ex5Ozx4rro-vT8R6TIKA=',
                 'user_id' => 1,
             ],
             [

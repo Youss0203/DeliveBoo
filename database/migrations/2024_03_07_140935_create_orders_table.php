@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('customer_name', 30);
             $table->string('customer_lastname', 30);
-            $table->string('customer_address',70);
-            $table->integer('customer_phone')->unsigned()->nullable(false)->unique()->digits(10);
-            $table->decimal('total_amount', 10,2);
+            $table->string('customer_address', 70);
+            $table->integer('customer_phone')->unsigned()->nullable(false)->digits(10);
+            $table->decimal('total_amount', 10, 2)->nullable();
             $table->timestamps();
         });
     }
