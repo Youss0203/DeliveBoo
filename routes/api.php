@@ -7,6 +7,7 @@ use App\Http\Controllers\Api\CategoriesController;
 use App\Http\Controllers\Api\RestaurantController;
 use App\Http\Controllers\Api\DishController;
 
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
