@@ -63,7 +63,7 @@
                                 <a class="nav-link text-white" href="{{ route('admin.dashboard') }}">Vai alla tua dashboard</a>
                             </li>
                             <li class="nav-item dropdown">
-
+                                <a class="nav-link text-white" href="{{ route('admin.orders.index') }}">Vai ai tuoi ordini</a>
                             <li class="nav-item dropdown">
 
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle fw-bold" href="#" role="button"
